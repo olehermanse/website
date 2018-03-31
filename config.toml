@@ -1,0 +1,15 @@
+baseURL = "https://www.oleherman.com/"
+languageCode = "en-us"
+title = "olehermanse"
+theme = "kiss"
+Paginate = 5
+enableRobotsTXT = true
+
+[params.social]
+
+twitter = "olehermanse"
+github = "olehermanse"
+email = "oleherman93@gmail.com"
+linkedin = "olehermanse"
+facebook = "olehermanse"
+instagram = "olehermanse"
