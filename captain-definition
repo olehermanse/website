@@ -17,7 +17,7 @@
     "RUN hugo",
     "RUN mkdir -p /var/www/oleherman.com/public/",
     "RUN cp -r /website/public/* /var/www/oleherman.com/public/",
-    "RUN ls /var/www/oleherman.com/public/index.html",
+    "RUN ls /var/www/oleherman.com/public/",
     "RUN echo 'Hello, world' > /var/www/oleherman.com/public/index.html",
     "ENV NODE_ENV production",
     "ENV PORT 80",
