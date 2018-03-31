@@ -8,6 +8,7 @@
     "RUN apt-get install hugo",
     "RUN ls",
     "RUN pwd",
+    "RUN cat /etc/nginx/nginx.conf",
     "RUN mkdir -p content",
     "RUN mkdir -p data",
     "RUN mkdir -p layouts",
