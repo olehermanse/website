@@ -6,6 +6,8 @@
     "ADD ./src /website",
     "RUN apt-get update",
     "RUN apt-get install hugo",
+    "RUN ls",
+    "RUN pwd",
     "RUN hugo",
     "COPY ./public /usr/share/nginx/html",
     "ENV NODE_ENV production",
