@@ -5,7 +5,7 @@
     "WORKDIR /website",
     "ADD ./src /website",
     "RUN apt-get update",
-    "RUN git submodule update --init --recursive",
+    "RUN ls themes/kiss",
     "RUN apt-get install hugo",
     "RUN ls",
     "RUN pwd",
