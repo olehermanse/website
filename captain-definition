@@ -1,14 +1,13 @@
 {
   "schemaVersion" :1 ,
   "dockerfileLines" :[
-    "FROM nginx",
+    "FROM ubuntu:latest",
     "WORKDIR /website",
     "ADD ./src /website",
     "RUN apt-get update",
     "RUN apt-get install -y git",
-    "RUN apt-get install -y snapd",
-    "RUN service snapd.service restart",
-    "RUN snap install hugo",
+    "RUN apt-get install -y hugo",
+    "RUN apt-get install -y nginx",
     "RUN git submodule update --init --recursive",
     "RUN ls -al themes/kiss",
     "RUN ls",
