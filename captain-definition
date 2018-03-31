@@ -1,0 +1,15 @@
+{
+  "schemaVersion" :1 ,
+  "dockerfileLines" :[
+    "FROM nginx",
+    "WORKDIR /website",
+    "ADD ./src /website",
+    "RUN apt-get update",
+    "RUN apt-get install hugo",
+    "RUN hugo",
+    "COPY ./public /usr/share/nginx/html",
+    "ENV NODE_ENV production",
+    "ENV PORT 80",
+    "EXPOSE 80"
+  ]
+}
