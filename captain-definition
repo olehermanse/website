@@ -27,6 +27,7 @@
     "RUN echo 'Hello, world' > /var/www/oleherman.com/index.html",
     "ENV NODE_ENV production",
     "ENV PORT 80",
-    "EXPOSE 80"
+    "EXPOSE 80",
+    "CMD /usr/sbin/nginx -g "daemon off;"
   ]
 }
