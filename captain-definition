@@ -28,7 +28,7 @@
     "ENV NODE_ENV production",
     "ENV PORT 80",
     "EXPOSE 80",
-    "RUN echo \"\ndaemon off;\" >> /etc/nginx/nginx.conf",
+    "RUN echo \"\\ndaemon off;\" >> /etc/nginx/nginx.conf",
     "CMD [\"nginx\"]"
   ]
 }
