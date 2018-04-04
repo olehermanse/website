@@ -15,6 +15,7 @@
     "RUN ls -al themes/kiss",
     "RUN git submodule update --init --recursive",
     "RUN cp nginx.conf /etc/nginx/conf.d/oleherman.com",
+    "RUN cp nginx.conf /etc/nginx/conf.d/default.conf",
     "RUN cp nginx.conf /etc/nginx/nginx.conf",
     "RUN cat /etc/nginx/nginx.conf",
     "RUN mkdir -p content",
