@@ -15,6 +15,7 @@
     "RUN ls -al themes/kiss",
     "RUN git submodule update --init --recursive",
     "RUN cp nginx.conf /etc/nginx/conf.d/oleherman.com",
+    "RUN cp nginx.conf /etc/nginx/nginx.conf",
     "RUN cat /etc/nginx/nginx.conf",
     "RUN mkdir -p content",
     "RUN mkdir -p data",
@@ -28,7 +29,6 @@
     "ENV NODE_ENV production",
     "ENV PORT 80",
     "EXPOSE 80",
-    "RUN echo \"\\ndaemon off;\" >> /etc/nginx/nginx.conf",
     "CMD [\"nginx\"]"
   ]
 }
