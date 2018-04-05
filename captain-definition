@@ -5,7 +5,7 @@
     "WORKDIR /www",
     "ADD ./src /www",
     "RUN apt-get update -y",
-    "RUN apt-get install -y git curl",
+    "RUN apt-get install -y git curl python3",
     "RUN curl --silent -L https://github.com/gohugoio/hugo/releases/download/v0.37.1/hugo_0.37.1_Linux-64bit.deb -o hugo.deb",
     "RUN dpkg -i hugo.deb",
     "RUN git submodule update --init --recursive",
