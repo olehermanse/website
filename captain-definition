@@ -1,20 +1,7 @@
 {
-  "schemaVersion" :1 ,
-  "dockerfileLines" :[
-    "FROM ubuntu:latest",
-    "WORKDIR /www",
-    "ADD ./src /www",
-    "RUN apt-get update -y",
-    "RUN apt-get install -y git curl python3",
-    "RUN curl --silent -L https://github.com/gohugoio/hugo/releases/download/v0.37.1/hugo_0.37.1_Linux-64bit.deb -o hugo.deb",
-    "RUN dpkg -i hugo.deb",
-    "RUN git submodule update --init --recursive",
-    "RUN mkdir -p content",
-    "RUN mkdir -p data",
-    "RUN mkdir -p layouts",
-    "RUN mkdir -p static",
-    "ENV PORT 80",
-    "EXPOSE 80",
-    "CMD hugo server --port 80 --bind 0.0.0.0 --baseURL=/ --appendPort=false"
-  ]
+ "schemaVersion" :1 ,
+ "dockerfileLines" :[
+                       "FROM  webdevops/nginx",
+                       "COPY ./src/app /app"
+                   ]
 }
