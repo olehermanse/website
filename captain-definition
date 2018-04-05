@@ -1,12 +1,11 @@
 {
   "schemaVersion" :1 ,
   "dockerfileLines" :[
-    "FROM nginx",
+    "FROM ubuntu:latest",
     "WORKDIR /www",
     "ADD ./src /www",
-    "RUN apt-get update",
-    "RUN apt-get install -y git",
-    "RUN apt-get install -y curl",
+    "RUN apt-get update -y",
+    "RUN apt-get install -y git curl",
     "RUN curl --silent -L https://github.com/gohugoio/hugo/releases/download/v0.37.1/hugo_0.37.1_Linux-64bit.deb -o hugo.deb",
     "RUN dpkg -i hugo.deb",
     "RUN git submodule update --init --recursive",
@@ -21,7 +20,6 @@
     "RUN ln -sf /dev/stdout /var/log/nginx/access.log && ln -sf /dev/stderr /var/log/nginx/error.log",
     "ENV PORT 80",
     "EXPOSE 80",
-    "RUN nginx -t",
-    "CMD [\"nginx\"]"
+    "CMD cd /var/www/oleherman.com/ && python3 -m http.server 80"
   ]
 }
