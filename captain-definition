@@ -3,6 +3,6 @@
  "dockerfileLines" :[
                        "FROM  webdevops/nginx",
                        "ENV WEB_DOCUMENT_INDEX index.html",
-                       "COPY ./src/app /app"
+                       "COPY ./src/public /app"
                    ]
 }
