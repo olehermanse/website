@@ -15,6 +15,6 @@
     "RUN mkdir -p static",
     "ENV PORT 80",
     "EXPOSE 80",
-    "CMD hugo server --port 80 --baseURL https://oleherman.com/"
+    "CMD hugo server --port 80 --baseURL https://oleherman.com/ --bind 0.0.0.0"
   ]
 }
