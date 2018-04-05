@@ -16,8 +16,6 @@
     "RUN hugo",
     "RUN mkdir -p /var/www/oleherman.com/",
     "RUN cp -r /www/public/* /var/www/oleherman.com/",
-    "RUN cp nginx.conf /etc/nginx/nginx.conf",
-    "RUN ln -sf /dev/stdout /var/log/nginx/access.log && ln -sf /dev/stderr /var/log/nginx/error.log",
     "ENV PORT 80",
     "EXPOSE 80",
     "CMD cd /var/www/oleherman.com/ && python3 -m http.server 80"
