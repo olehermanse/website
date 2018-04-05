@@ -13,11 +13,9 @@
     "RUN mkdir -p data",
     "RUN mkdir -p layouts",
     "RUN mkdir -p static",
-    "RUN hugo",
-    "RUN mkdir -p /var/www/oleherman.com/",
-    "RUN cp -r /www/public/* /var/www/oleherman.com/",
+    "RUN hugo -v",
     "ENV PORT 80",
     "EXPOSE 80",
-    "CMD cd /var/www/oleherman.com/ && python3 -m http.server 80"
+    "CMD cd public && python3 -m http.server 80"
   ]
 }
