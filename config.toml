@@ -1,4 +1,4 @@
-baseURL = "https://www.oleherman.com/"
+baseURL = "https://oleherman.com/"
 languageCode = "en-us"
 title = "olehermanse"
 theme = "kiss"
