@@ -71,11 +71,15 @@ enableRobotsTXT = true
     name = "linkedin"
     weight = 4
 
-
 [[menu.icon]]
     url = "https://www.instagram.com/olehermanse/"
     name = "instagram"
     weight = 5
+
+[[menu.icon]]
+    url = "https://medium.com/@olehermanse"
+    name = "medium"
+    weight = 6
 
 # [[menu.icon]]
 #     url = "https://www.stackoverflow.com/username/"
