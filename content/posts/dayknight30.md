@@ -12,7 +12,6 @@
    ],
    "title": "The DayKnight 30-day project"
 }
-# The DayKnight 30-day project
 
 I've watched, and been a fan of, video game streamer [Sean "Day9" Plott](https://day9.tv) for many years.
 Since he is now encouraging community members to do a 30-day project with him, I decided to join.
