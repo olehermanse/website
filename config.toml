@@ -25,7 +25,7 @@ enableRobotsTXT = true
     font = "Roboto" # should match the name on Google Fonts!
     highlight = true
     highlightStyle = "solarized-dark"
-    highlightLanguages = ["go", "rust", "js", "c"]
+    highlightLanguages = ["go", "rust", "js", "c", "html", "css"]
 
 [[menu.main]]
     url = "/"
