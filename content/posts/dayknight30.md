@@ -13,6 +13,8 @@
    "title": "The DayKnight 30-day project"
 }
 
+## Introduction
+
 I've watched, and been a fan of, video game streamer [Sean "Day9" Plott](https://day9.tv) for many years.
 Since he is now encouraging community members to do a 30-day project with him, I decided to join.
 The goal is to stop procrastinating and focus on getting something done in 30 days.
