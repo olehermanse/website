@@ -7,6 +7,9 @@ copyright = "&copy; <a href=\"https://github.com/olehermanse\">Ole Herman Schuma
 Paginate = 5
 enableRobotsTXT = true
 
+[params.assets]
+customCSS = ["css/custom.css"]
+
 [params.info]
 adsense = "" # Adsense ID (ID only, without ca-pub-)
 enableSocial = true # Adds OpenGraph and Twitter cards
