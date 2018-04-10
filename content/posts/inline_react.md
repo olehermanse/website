@@ -17,8 +17,6 @@
    "title": "Inlining a React/Material-UI web app"
 }
 
-### Introduction
-
 This guide was originally [posted on Medium](https://medium.com/front-end-hacking/inlining-a-react-material-ui-web-app-using-npm-scripts-5ffd955d05b2).
 I am reposting here to test the features of my new [Hugo](https://gohugo.io/) website.
 

@@ -23,7 +23,7 @@ pageID = ""
 page = "" # Twitter Page username. If not set, params.social.twitter will be used.
 
 [params.sections]
-"/posts" = "Posts"
+"/posts" = "posts"
 
 [params.social]
 
