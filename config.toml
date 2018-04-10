@@ -1,7 +1,7 @@
-baseurl = "/"
+baseurl = ""
 languageCode = "en"
 title = "olehermanse"
-theme = "kissy"
+theme = "kiss"
 copyright = "&copy; <a href=\"https://github.com/olehermanse\">Ole Herman Schumacher Elgesem</a> 2018"
 # Number of posts per page
 Paginate = 5
