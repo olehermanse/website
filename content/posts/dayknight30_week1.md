@@ -1,5 +1,5 @@
 ---
-title: "30-day project - Week 1"
+title: "The DayKnight 30-day project - Week 1"
 description: "\"Graphical\" User Interface"
 date: 2018-04-15T16:57:09+02:00
 categories:
