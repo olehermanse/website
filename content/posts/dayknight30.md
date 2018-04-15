@@ -1,17 +1,16 @@
-{
-   "categories": [
-      "Development",
-      "Game Development"
-   ],
-   "date": "2018-04-09T00:14:05+02:00",
-   "description": "A month of productivity",
-   "tags": [
-      "gamedev",
-      "mrpg",
-      "dk30"
-   ],
-   "title": "The DayKnight 30-day project"
-}
+---
+title: "The DayKnight 30-day project"
+description: "A month of productivity"
+date: 2018-04-09T00:14:05+02:00
+categories:
+  - "Development"
+  - "Game Development"
+tags:
+  - "gamedev"
+  - "mrpg"
+  - "dk30"
+draft: false
+---
 
 I've watched, and been a fan of, video game streamer [Sean "Day9" Plott](https://day9.tv) for many years.
 Since he is now encouraging community members to do a 30-day project with him, I decided to join.
