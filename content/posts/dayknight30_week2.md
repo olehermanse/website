@@ -9,7 +9,7 @@ tags:
   - "gamedev"
   - "mrpg"
   - "dk30"
-draft: true
+draft: false
 ---
 
 Following [the initial plan](../dayknight30), I worked on effects this week.
@@ -19,7 +19,7 @@ Skills can apply effects, and effects can also apply other effects.
 I made a few improvements in other places as well.
 A gif should say [way more than a thousand words](https://www.reddit.com/r/shittyaskscience/comments/2h86xo/);
 
-![GIF of new features](/mrpg/gui_0.gif)
+![GIF of new features](/mrpg/gui_1.gif)
 
 Notice that text is more animated now?
 I've also made changes to existing skills and started adding new ones, I'll talk more about this next week.
@@ -50,8 +50,7 @@ They are even [using the same base class internally](https://github.com/oleherma
 
 The important takeaway here is that outcomes of skills and effects are calculated for both players, before being applied.
 This way, skills can be based on remaining health, mana, etc. and outcomes will still be consistent.
-An interesting consequence of this system is that no skills or effects can set a stat to a value, when applying they can only add or subtract as these are commutative operations.
-Thus, players can be temporarily dead if one skill does enough damage to kill while
+An interesting consequence of this system is that no skills or effects can _set_ a stat to a value, when applying they can only add or subtract as these are commutative operations.
 
 ### Next week
 
