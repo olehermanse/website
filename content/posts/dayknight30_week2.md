@@ -96,7 +96,7 @@ See [github.com/olehermanse/mrpg](https://github.com/olehermanse/mrpg) for more 
 
 The changelog was generated using:
 ```bash
-$ git log --pretty=format:"* [%s](https://github.com/olehermanse/mrpg/commit/%T)" 733bf2f..HEAD
+$ git log --pretty=format:"* [%s](https://github.com/olehermanse/mrpg/commit/%H)" 733bf2f..HEAD
 ```
 (This prints all commits after `733bf2f` - which was the end of the previous changelog)
 
