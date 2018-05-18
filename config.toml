@@ -25,7 +25,7 @@ pageID = ""
 [params.opengraph.twitter]
 page = "" # Twitter Page username. If not set, params.social.twitter will be used.
 
-[params.sections]
+[params.sections_left]
 "/posts" = "posts"
 
 [params.social]
