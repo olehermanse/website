@@ -9,6 +9,7 @@ tags:
   - "gamedev"
   - "mrpg"
   - "dk30"
+  - "rpg"
 draft: false
 ---
 
