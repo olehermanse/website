@@ -1,4 +1,4 @@
-baseurl = ""
+baseurl = "/"
 languageCode = "en"
 title = "olehermanse"
 theme = "kiss"
