@@ -6,13 +6,37 @@ html {
 }
 .container_cols {
   margin: 64px;
-   -webkit-column-count: 4;
-      -moz-column-count: 4;
-           column-count: 4;
+     -webkit-column-count: 1;
+        -moz-column-count: 1;
+             column-count: 1;
 
    -webkit-column-gap: 16px;
       -moz-column-gap: 16px;
            column-gap: 16px;
+}
+@media (min-width: 800px)
+{
+  .container_cols {
+     -webkit-column-count: 2;
+        -moz-column-count: 2;
+             column-count: 2;
+  }
+}
+@media (min-width: 1200px)
+{
+  .container_cols {
+     -webkit-column-count: 3;
+        -moz-column-count: 3;
+             column-count: 3;
+  }
+}
+@media (min-width: 1600px)
+{
+  .container_cols {
+     -webkit-column-count: 4;
+        -moz-column-count: 4;
+             column-count: 4;
+  }
 }
 h1, h2 {
   font-size: 2em;
