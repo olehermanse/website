@@ -1,0 +1,132 @@
+<html>
+<head>
+<style type="text/css">
+html {
+  font-family: sans-serif;
+}
+.container_cols {
+  margin: 64px;
+   -webkit-column-count: 4;
+      -moz-column-count: 4;
+           column-count: 4;
+
+   -webkit-column-gap: 16px;
+      -moz-column-gap: 16px;
+           column-gap: 16px;
+}
+h1, h2 {
+  font-size: 2em;
+}
+body, header {
+  margin: 0px;
+  padding: 0px;
+}
+code {
+  padding: 10px;
+  color: brown;
+}
+header{
+  padding: 10px 0px 0px 0px;
+}
+footer{
+  padding: 0px 0px 10px 0px;
+}
+header, footer {
+  text-align: justify;
+  -moz-text-align-last: center;
+  text-align-last: center;
+}
+a {
+  color: inherit;
+}
+</style>
+</head>
+<body>
+<header><h1>Cheat sheet</h1></header>
+<div class="container_cols">
+<h2 id="terminal-bash">Terminal / Bash</h2>
+<p><strong>Interrupt program</strong>: <code>ctrl-c</code></p>
+<p><strong>Search previous commands</strong>: <code>ctrl-r</code></p>
+<p><strong>Syntax</strong>:</p>
+<pre><code>program arg_1 &quot;Arg 2&quot;</code></pre>
+<p>Show current <strong>user</strong>:</p>
+<pre><code>whoami</code></pre>
+<p>Go to <strong>home</strong> folder:</p>
+<pre><code>cd</code></pre>
+<p><strong>Create</strong> a folder:</p>
+<pre><code>mkdir code</code></pre>
+<p><strong>Create</strong> a file:</p>
+<pre><code>touch code/file.txt</code></pre>
+<p><strong>Append text</strong> to a file:</p>
+<pre><code>printf &quot;Hello, world\n&quot; &gt;&gt; code/file.txt</code></pre>
+<p><strong>Overwrite</strong> a file:</p>
+<pre><code>printf &quot;Overwritten\n&quot; &gt; code/file.txt</code></pre>
+<p><strong>Print</strong> a file's contents:</p>
+<pre><code>cat code/file.txt</code></pre>
+<p><strong>Read</strong> a file interactively (q to quit):</p>
+<pre><code>less code/file.txt</code></pre>
+<p>Go to <strong>root</strong> folder:</p>
+<pre><code>cd /</code></pre>
+<p>Go to folder <strong>relative to home</strong>:</p>
+<pre><code>cd ~/code</code></pre>
+<p>Go <strong>out</strong> of folder (1 up):</p>
+<pre><code>cd ..</code></pre>
+<p>Show <strong>current folder</strong> (path):</p>
+<pre><code>pwd</code></pre>
+<p>Show <strong>contents</strong> of current folder:</p>
+<pre><code>ls</code></pre>
+<p>Show hidden files and <strong>details about files</strong>:</p>
+<pre><code>ls -al</code></pre>
+<p>Show <strong>contents</strong> of different folder:</p>
+<pre><code>ls -al ~/code</code></pre>
+<p>Run program <strong>if compile succeeded</strong>:</p>
+<pre><code>javac Program.java &amp;&amp; java Program</code></pre>
+<p>Play sound <strong>if compile failed</strong>:</p>
+<pre><code>javac Program.java || printf &quot;\a&quot;</code></pre>
+<p>Check <strong>where</strong> a program is:</p>
+<pre><code>which javac</code></pre>
+<p>Check where the shell <strong>looks for programs</strong>:</p>
+<pre><code>echo $PATH</code></pre>
+<p>Show <strong>processes</strong>:</p>
+<pre><code>ps aux</code></pre>
+<p>Show only <strong>java processes</strong> by piping the output to grep:</p>
+<pre><code>ps aux | grep java</code></pre>
+<h2 id="git">Git</h2>
+<ul>
+<li><code>git</code> is a program for version control of code and collaboration with others</li>
+<li>GitHub.com is a website where people share code</li>
+<li>Every time you've made a meaningful change to your code, <em>commit</em> it</li>
+<li>Commit often, it provides valuable history, and allows you to go back in time</li>
+</ul>
+<p><strong>Create</strong> a new repository (current folder):</p>
+<pre><code>git init</code></pre>
+<p><strong>Add</strong> file(s) you want to commit:</p>
+<pre><code>git add game.py</code></pre>
+<p>Check the <strong>current status</strong> of your changes:</p>
+<pre><code>git status</code></pre>
+<p><strong>Commit</strong> changes, write a short message about what you changed:</p>
+<pre><code>git commit -m &quot;Added player movement&quot;</code></pre>
+<p>See <strong>previous commits</strong> (quit with q):</p>
+<pre><code>git log</code></pre>
+<p><strong>Push</strong> your changes to a remote (if configured):</p>
+<pre><code>git push</code></pre>
+<p>Add a <strong>remote</strong> repo called origin (Need to create on GitHub website):</p>
+<pre><code>git remote add origin git@github.com:user/repo.git</code></pre>
+<p>Or <strong>download</strong> something from GitHub (add SSH key first):</p>
+<pre><code>git clone git@github.com:user/repo.git</code></pre>
+<p>Check that you have a <strong>remote repo</strong> to push to:</p>
+<pre><code>git remote -v</code></pre>
+<h2 id="mac-os-x">Mac OS X</h2>
+<p><strong>Full-screen</strong> <code>ctrl-cmd-f</code></p>
+<p><strong>Spotlight-search</strong> <code>cmd-space</code></p>
+<h2 id="atom">Atom</h2>
+<p><strong>Open file</strong> <code>cmd-t</code></p>
+<p><strong>Switch between open files</strong> <code>cmd-numberkeys</code></p>
+<p><strong>Multi-cursor down</strong> <code>alt-down</code></p>
+<p><strong>Multi-cursor up</strong> <code>alt-up</code></p>
+<p><strong>Highlight next match</strong> <code>cmd-d</code></p>
+<p><strong>Command Palette</strong> <code>shift-cmd-p</code></p>
+</div>
+<footer><b><a href="https://oleherman.com/">@olehermanse</a></b></footer>
+</body>
+</html>
