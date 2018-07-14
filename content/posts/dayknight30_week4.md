@@ -16,7 +16,6 @@ draft: false
 [DK30](../dayknight30) has been over for quite some time.
 I wanted to post a final update about my progress, for my "fake week 4".
 Work and other things have kept me busy, so I'm not done with everything I wanted to do, but still enjoy working on the game.
-:)
 
 ## Enemies
 
