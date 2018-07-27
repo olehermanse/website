@@ -228,6 +228,6 @@ If you want to use multiple cores for CFENgine (but not all), there are two opti
  * Create more cgroups and assign the services how you want them manually
  * Instead of writing `"1"` to `cpuset.cpus` use a comma-separated list:
 
- ```
+```
 ExecStartPre=/bin/bash -c '/usr/bin/echo "1,2,3" > /sys/fs/cgroup/cpuset/cfe_group/cpuset.cpus'
- ```
+```
