@@ -223,7 +223,7 @@ That's it!
 Change the `1` in `cfengine3.service` to whatever cpu core you want to use, then reload and restart to check that it worked.
 A good next step is to automate this, make CFEngine set up these services with our new modifications.
 
-If you want to use multiple cores for CFENgine (but not all), there are two options:
+If you want to use multiple cores for CFEngine (but not all), there are two options:
 
  * Create more cgroups and assign the services how you want them manually
  * Instead of writing `"1"` to `cpuset.cpus` use a comma-separated list:
