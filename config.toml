@@ -32,10 +32,14 @@ page = "" # Twitter Page username. If not set, params.social.twitter will be use
 [params.social]
 
 twitter = "olehermanse"
-github = "olehermanse"
+instagram = "olehermanse"
 email = "oleherman93@gmail.com"
 linkedin = "olehermanse"
-instagram = "olehermanse"
+gitlab = "olehermanse"
+github = "olehermanse"
+
+[params.social.config]
+platforms = ["twitter", "instagram", "email", "linkedin", "gitlab", "github"]
 
 [taxonomies]
 tag = "tags"
