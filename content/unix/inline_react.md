@@ -1,21 +1,20 @@
-{
-   "categories": [
-      "Development",
-      "Web Development"
-   ],
-   "date": "2017-12-13",
-   "description": "Send everything in 1 GET response",
-   "tags": [
-      "js",
-      "npm",
-      "web",
-      "frontend",
-      "gui",
-      "react",
-      "materialui"
-   ],
-   "title": "Inlining a React/Material-UI web app"
-}
+---
+title: "Inlining a React/Material-UI web app"
+categories:
+  - "Development"
+  - "Web Development"
+date: "2017-12-13"
+description: "Send everything in 1 GET response"
+tags:
+  - "js"
+  - "npm"
+  - "web"
+  - "frontend"
+  - "gui"
+  - "react"
+  - "materialui"
+---
+
 
 This guide was originally [posted on Medium](https://medium.com/front-end-hacking/inlining-a-react-material-ui-web-app-using-npm-scripts-5ffd955d05b2).
 I am reposting here to test the features of my new [Hugo](https://gohugo.io/) website.
@@ -23,12 +22,12 @@ I am reposting here to test the features of my new [Hugo](https://gohugo.io/) we
 This guide is pretty simple and straightforward, it is not specific to React, but the example project uses React and Material UI.
 Before setting up a build system like this, you should at least be familiar with the UNIX terminal, JavaScript, CSS, and HTML.
 
-Inlining can be done with other tools, like gulp or create-react-app (or next year’s big new JavaScript framework), so you should explore your options.
-For me, the biggest appeal of npm scripts (npm run) is that it’s simple, and doesn’t have any dependencies besides npm.
+Inlining can be done with other tools, like gulp or create-react-app (or next year's big new JavaScript framework), so you should explore your options.
+For me, the biggest appeal of npm scripts (npm run) is that it's simple, and doesn't have any dependencies besides npm.
 
 ---
 
-### Node package manager (npm)
+### Node package manager (npm)
 
 npm is used to download packages and run build commands, it can be downloaded as part of nodejs:
 
@@ -36,7 +35,7 @@ https://nodejs.org/en/download/
 
 ---
 
-### Creating a new project
+### Creating a new project
 
 Make a project folder and initialize npm inside of it:
 ```bash
@@ -74,21 +73,21 @@ $ npm install --save-dev babel-preset-env babel-preset-react babel-preset-stage-
 $ npm install --save-dev express inline-source inline-source-cli uglify
 ```
 
-*Tip: The--save flags add the packages to package.json , if you’re using the example project you can install them by running `npm install`.*
+*Tip: The--save flags add the packages to package.json , if you're using the example project you can install them by running `npm install`.*
 
 ---
 
-### A simple HTML skeleton
+### A simple HTML skeleton
 
 Our app will consist of HTML, CSS, and JavaScript files.
 The build system will compile all of these into a single file, `index.html`, using the `inline-source` package.
-Let’s create some empty files:
+Let's create some empty files:
 ```bash
 $ mkdir src
 $ touch src/main.html src/main.css src/main.jsx
 ```
 
-Let’s add some content to src/main.html:
+Let's add some content to src/main.html:
 ```html
 <!doctype html>
 <html>
@@ -109,7 +108,7 @@ The `body_main` div content will be controlled by JavaScript(React).
 
 ---
 
-### Content to inline
+### Content to inline
 
 To see the effects of inlining, we should add some simple content to the JavaScript and CSS files:
 ```bash
@@ -139,7 +138,7 @@ Now, build:
 $ npm run build
 ```
 
-That’s it. build/index.html now contains both HTML, CSS, and JavaScript:
+That's it. build/index.html now contains both HTML, CSS, and JavaScript:
 ```html
 <!doctype html>
 <html>
@@ -163,7 +162,7 @@ The background color should be grey, and the text should say “Hello, JavaScrip
 
 ---
 
-### React, babel, JSX, browserify and uglify
+### React, babel, JSX, browserify and uglify
 
 When writing React apps and components, JSX is preferred over plain JavaScript.
 `babel` can be used to transpile JSX to javascript.
@@ -178,13 +177,13 @@ browserify -t [ babelify  --presets [ env stage-0 react ] ] src/main.jsx | uglif
 ```
 
 Run the build command again, `npm run build`, to make sure you haven't introduced any errors.
-The resulting `index.html` should look identical, we haven’t made any changes to the content, but the build system is now ready to build a React app written in JSX and ES6.
+The resulting `index.html` should look identical, we haven't made any changes to the content, but the build system is now ready to build a React app written in JSX and ES6.
 
 ---
 
 ### React app with Material-UI components
 
-I’ve created a simple example project to show how this build system works with JSX and Material-UI code.
+I've created a simple example project to show how this build system works with JSX and Material-UI code.
 Feel free to [download from GitHub](https://github.com/olehermanse/ReactCalculator) and experiment yourself.
 Teaching React or Material-UI is outside the scope of this tutorial.
 Excellent documentation is available for both, see the links below.

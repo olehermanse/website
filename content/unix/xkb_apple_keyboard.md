@@ -61,8 +61,8 @@ Second stage (`symbols`) depends on the input source picked in Settings.
 The configuration files can be found in `/usr/share/X11/xkb/`.
 
 This sounds great in theory, except when the system struggles to identify keyboard model automatically.
-Since this model isn't exposed to the user in UI, a normal user doesn't really know that it exists.
-The result is that we address problems in the `symbols` stage which should have been done in `keycodes`.
+Since this model isn't exposed to the user in UI, a normal user doesn't really know that it exists, or how to change it.
+The result is that we address problems in the `symbols` file which should have been done in `keycodes`.
 
 ### Keycodes
 
@@ -93,7 +93,7 @@ In most cases it's easier to leave keycodes as is and only edit `symbols` instea
 
 #### Examining keycodes sent by keyboard
 
-If you want to edit keycodes files, you can see the keycodes from your keyboard using `xev`:
+You can see the keycodes from your keyboard using `xev`:
 
 ```
 $ xev
