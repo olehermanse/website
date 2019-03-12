@@ -5,7 +5,6 @@ draft: false
 tags:
   - "redhat"
   - "mac"
-  - "development"
   - "unix"
   - "configuration"
 ---
