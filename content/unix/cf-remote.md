@@ -2,6 +2,12 @@
 title: "Introducing cf-remote: Tooling to deploy CFEngine"
 date: 2019-03-11T10:38:06+01:00
 draft: false
+tags:
+  - "cfengine"
+  - "python"
+  - "configuration
+  - "development"
+  - "unix"
 ---
 
 I work at [Northern.tech](https://northern.tech), developing [CFEngine](https://github.com/cfengine/core), a configuration management system.
