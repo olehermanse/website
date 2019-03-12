@@ -3,11 +3,11 @@ title: "Fixing your mac keyboard in X11 (RHEL 7)"
 date: 2019-03-12T21:24:30+01:00
 draft: false
 tags:
- - "redhat"
- - "mac"
- - "development"
- - "unix"
- - "configuration"
+  - "redhat"
+  - "mac"
+  - "development"
+  - "unix"
+  - "configuration"
 ---
 
 _Alternatively: How xkb works, and how to change keys which are wrong._
