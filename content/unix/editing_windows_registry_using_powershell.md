@@ -18,6 +18,7 @@ I needed a way to test these features, and I prefer ssh access over GUI, so I ma
 ## View
 
 See keys (folders) at a path:
+
 ```
 Get-ChildItem -Path "HKLM:\SOFTWARE\"
 ```
@@ -57,8 +58,9 @@ Set-ItemProperty -Path "HKLM:\SOFTWARE\CFEngine\" -Name "VERSION" -Value "3.12.2
 ```
 
 See the result:
-``      
-PS C:\Users\Administrator> Get-ItemProperty -Path "HKLM:\SOFTWARE\CFEngine\" -Name "VERSION"                       
+
+```
+PS C:\Users\Administrator> Get-ItemProperty -Path "HKLM:\SOFTWARE\CFEngine\" -Name "VERSION"
 ```
 
 ## Delete
