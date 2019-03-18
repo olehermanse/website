@@ -8,6 +8,7 @@ tags:
   - "powershell"
   - "windows"
   - "databases"
+  - "work"
 ---
 
 CFEngine Enterprise supports Windows and [Windows Registry](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/structure-of-the-registry) manipulation.

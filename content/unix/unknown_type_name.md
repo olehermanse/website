@@ -8,6 +8,7 @@ tags:
   - "C"
   - "development"
   - "unix"
+  - "work"
 ---
 
 I ran across the error message (`Unknown type name 'u_int', 'u_long', 'u_char' etc.`) when trying to incorporate some old C code into a more modern project.

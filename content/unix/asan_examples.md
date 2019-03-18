@@ -9,6 +9,7 @@ tags:
   - "security"
   - "development"
   - "unix"
+  - "work"
 ---
 
 [AddressSanitizer](https://github.com/google/sanitizers/wiki/AddressSanitizer) is a great tool for finding bugs in C or C++ projects.

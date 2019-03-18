@@ -8,6 +8,7 @@ tags:
   - "configuration"
   - "python"
   - "development"
+  - "work"
 ---
 
 I work at [Northern.tech](https://northern.tech), developing [CFEngine](https://github.com/cfengine/core), a configuration management system.
