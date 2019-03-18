@@ -29,19 +29,37 @@ Deploying CFEngine normally consists of these steps:
 At a company hackathon I decided to make my script into something better, something that would be useful to my colleagues, and maybe even CFEngine users in general.
 Enter `cf-remote`.
 
+## Information
+
+`cf-remote` can be used to show information about a system before installing CFEngine.
+The `info` command logs into the system, runs a few commands and parses `/etc/os-release` to present relevant information:
+
+```
+$ cf-remote info -H 34.252.28.73
+
+ec2-user@34.252.28.73
+OS            : rhel (fedora)
+Architecture  : x86_64
+CFEngine      : Not installed
+Policy server : None
+Binaries      : rpm, yum
+```
+
+The `cf-remote` command line tool is written in Python, and uses [Fabric](http://www.fabfile.org/) to log into the system via SSH.
+(Add `--log-level debug` to see all commands `cf-remote` runs).
+Note that there are almost no dependencies on the target system.
+You only need ssh access and a shell which can perform basic UNIX commands like `ls`, `cat`, `which`.
+
+The printout shows that it's a Red Hat machine, and CFEngine is not installed yet.
+
 ## Install and bootstrap
 
-`cf-remote` can do all of this, the only thing you really need to specify is IP address(es).
-In the simple case, this should be enough to install and bootstrap a host:
+`cf-remote` can install CFEngine on the system above.
+The only thing you really need to specify is IP address(es):
 
 ```
 $ cf-remote install --hub 34.252.28.73 --bootstrap 172.31.30.237
 ```
-
-The `cf-remote` command line tool is written in Python, and uses [Fabric](http://www.fabfile.org/) to log into the system via SSH.
-It follows the same steps you would manually (listed above).
-Note that there are almost no dependencies on the target system.
-You only need ssh access and a shell which can perform basic UNIX commands like `ls`, `cat`, `which`.
 
 Here is the output from the example above:
 
@@ -85,23 +103,6 @@ $ cf-remote install --hub 34.252.28.73 --bootstrap 172.31.30.237 --clients ./cli
 The tooling includes a few other useful utilities.
 Some of these things can be done in CFEngine policy, but `cf-remote` doesn't assume that CFEngine is installed.
 Thus, these commands can be useful both before and after installing CFEngine.
-
-### Host information
-
-The `info` command logs into the system, runs a few commands and parses `/etc/os-release` to present information about the system:
-
-```
-$ cf-remote info -H 34.252.28.73
-
-ec2-user@34.252.28.73
-OS            : rhel (fedora)
-Architecture  : x86_64
-CFEngine      : 3.12.1
-Policy server : 172.31.30.237
-Binaries      : rpm, yum
-```
-
-(Add `--log-level debug` to see all commands `cf-remote` runs).
 
 ### File copy
 
