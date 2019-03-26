@@ -27,10 +27,10 @@ Deploying CFEngine normally consists of these steps:
 At a company hackathon I decided to make my script into something better, something that would be useful to my colleagues, and maybe even CFEngine users in general.
 Enter `cf-remote`.
 
-## Information
+## Info
 
 `cf-remote` can be used to show information about a system before installing CFEngine.
-The `info` command logs into the system, runs a few commands and parses `/etc/os-release` to present relevant information:
+The `info` command logs into the system, runs a few commands and parses [`/etc/os-release`](https://www.freedesktop.org/software/systemd/man/os-release.html) to present relevant information:
 
 ```
 $ cf-remote info -H 34.252.28.73
@@ -143,6 +143,9 @@ https://github.com/cfengine/core/tree/master/contrib/cf-remote
 The README has installation instructions.
 It should work on any system with curl, Python(3), [Fabric](http://www.fabfile.org/), and [Requests](http://docs.python-requests.org/en/master/).
 We've tested it on Linux(Fedora) and OS X.
+Currently, RHEL and Ubuntu targets are supported.
+Debian, Fedora, and CentOS should also work as they use `dpkg` / `rpm`.
+The target must be running an SSH server with your key in `authorized_keys`, so Fabric can log in.
 
 ### Contributing
 
