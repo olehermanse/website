@@ -76,7 +76,7 @@ Copying: '/Users/olehermanse/.cfengine/cf-remote/packages/cfengine-nova-hub-3.12
 Installing: 'cfengine-nova-hub-3.12.1-1.x86_64.rpm' on '34.252.28.73'
 CFEngine 3.12.1 was successfully installed on '34.252.28.73'
 Bootstrapping: '34.252.28.73' -> '172.31.30.237'
-Bootstrap succesful: '34.252.28.73' -> '172.31.30.237'
+Bootstrap successful: '34.252.28.73' -> '172.31.30.237'
 ```
 
 We can guess the username and CFEngine version if not specified.
