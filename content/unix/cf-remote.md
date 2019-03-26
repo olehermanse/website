@@ -132,7 +132,7 @@ This is especially useful to run commands on many hosts.
 `cf-remote` was introduced, with some live demos, in my talk at [CfgMgmtCamp](https://cfgmgmtcamp.eu/) 2019.
 The video recording is available on YouTube:
 
-https://www.youtube.com/watch?v=q50_QTd1AN4
+https://www.youtube.com/watch?v=q50_QTd1AN4&t=20m51s
 
 ## Getting started
 
