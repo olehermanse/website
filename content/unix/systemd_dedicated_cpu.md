@@ -10,7 +10,6 @@ tags:
   - "cfengine"
   - "configuration"
   - "unix"
-  - "work"
 ---
 
 This post is based on an excellent article from Red Hat:

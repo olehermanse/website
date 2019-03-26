@@ -7,7 +7,6 @@ tags:
   - "mac"
   - "unix"
   - "configuration"
-  - "review"
 ---
 
 _Alternatively: How xkb works, and how to change keys which are wrong._

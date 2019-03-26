@@ -10,7 +10,6 @@ tags:
   - "npm"
   - "web"
   - "frontend"
-  - "gui"
   - "react"
   - "materialui"
 ---

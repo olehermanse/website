@@ -8,7 +8,6 @@ tags:
   - "C"
   - "development"
   - "unix"
-  - "review"
 ---
 
 `printf` and `scanf` are the C standard library functions for printing out and reading in data.
