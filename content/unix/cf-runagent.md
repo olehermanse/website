@@ -74,7 +74,8 @@ Welcome to Ubuntu 18.04.2 LTS (GNU/Linux 4.15.0-1032-aws x86_64)
 0 updates are security updates.
 
 
-ubuntu@ip-172-31-2-67:~$
+ubuntu@ip-172-31-2-67:~$ sudo bash
+root@ip-172-31-2-67:~#
 ```
 
 (You will need a text editor, so feel free to install `emacs` if you want).
@@ -82,7 +83,7 @@ ubuntu@ip-172-31-2-67:~$
 ## Create user
 
 ```
-ubuntu@ip-172-31-2-67:~$ sudo adduser cf-runner --disabled-password
+root@ip-172-31-2-67:~# adduser cf-runner --disabled-password
 Adding user `cf-runner' ...
 Adding new group `cf-runner' (1001) ...
 Adding new user `cf-runner' (1001) with group `cf-runner' ...
@@ -95,7 +96,7 @@ Enter the new value, or press ENTER for the default
 	Home Phone []:
 	Other []:
 Is the information correct? [Y/n] Y
-ubuntu@ip-172-31-2-67:~$ sudo -u cf-runner bash
+root@ip-172-31-2-67:~# sudo -u cf-runner bash
 cf-runner@ip-172-31-2-67:~$
 ```
 
@@ -158,7 +159,6 @@ We need to switch back to root for a second:
 
 ```
 cf-runner@ip-172-31-2-67:~$ exit
-ubuntu@ip-172-31-2-67:~$ sudo bash
 root@ip-172-31-2-67:~# cp /var/cfengine/ppkeys/localhost.pub /home/cf-runner/.cfagent/ppkeys/cf-runner-SHA=af4c5dce82c29d18142cb3308f2086bfd0e1123fef948f73209c3053c2d6d7a6.pub
 root@ip-172-31-2-67:~# ls -al /home/cf-runner/.cfagent/ppkeys/cf-runner-SHA=af4c5dce82c29d18142cb3308f2086bfd0e1123fef948f73209c3053c2d6d7a6.pub
 -rw------- 1 root root 426 Apr 10 08:21 '/home/cf-runner/.cfagent/ppkeys/cf-runner-SHA=af4c5dce82c29d18142cb3308f2086bfd0e1123fef948f73209c3053c2d6d7a6.pub'
@@ -175,6 +175,32 @@ Note the filename of the public key:
 
 Where `<user>` is the **local** user running `cf-runagent`, and `<hostkey>` is the key digest of the (remote) `cf-serverd` (most likely running as root).
 If you forget the `.pub` extension, or get the file name wrong in any way, it will not work.
+
+## Trusting the client key
+
+In a new installation, `cf-serverd` automatically trusts new keys, placing them into `/var/cfengine/ppkeys`.
+This behavior is controlled by `trustkeysfrom` in the `cf-serverd` policy.
+It is recommended to disable or stricten this feature, so the server doesn't automatically trust new keys.
+If you have already disabled this, and need to manually trust the new client key we generated, you can do so by copying the public key file:
+
+```
+cf-runner@ip-172-31-2-67:~$ cf-runagent -H 172.31.2.67
+   error: Connection unexpectedly closed (SSL_read): socket closed
+   error: Connection was hung up while receiving line:
+   error: Connection was hung up during identification! (3)
+   error: Failed to connect to host: 172.31.2.67
+cf-runner@ip-172-31-2-67:~$ exit
+root@ip-172-31-2-67:~# cf-key -p /home/cf-runner/.cfagent/ppkeys/localhost.pub
+SHA=c57b3c10ff9dd6b051b02157561de26cf11e357523cf39da6fdeb1dc4cfe790a
+root@ip-172-31-2-67:~# cp /home/cf-runner/.cfagent/ppkeys/localhost.pub /var/cfengine/ppkeys/cf-runner-SHA=c57b3c10ff9dd6b051b02157561de26cf11e357523cf39da6fdeb1dc4cfe790a.pub
+root@ip-172-31-2-67:~# cf-agent -Kf update.cf && cf-agent -K
+root@ip-172-31-2-67:~# systemctl restart cfengine3
+root@ip-172-31-2-67:~# cf-agent -Kf update.cf && cf-agent -K
+root@ip-172-31-2-67:~# sudo -u cf-runner bash
+cf-runner@ip-172-31-2-67:~$
+```
+
+(If you are using the default policy, without altering `trustkeysfrom`, this step is not necessary).
 
 ## Verbose server output
 
@@ -224,6 +250,7 @@ root@ip-172-31-2-67:~#
 ```
 
 The output indicates that `cf-runner` is not an allowed user for `EXEC` requests (cf-runagent).
+(In CFEngine 3.7 there is no `cf-serverd` unit, stop the entire `cfengine3` unit instead).
 
 ## Allow the user to make EXEC requests
 
@@ -252,6 +279,7 @@ Use other ACL's and `allowconnects` as security measures, not `allowusers`.
 
 For older versions of the policy framework, you will have to edit the policy manually.
 `cf-serverd` policy is at `/var/cfengine/masterfiles/controls/cf_serverd.cf`.
+(In 3.7: `/var/cfengine/masterfiles/controls/3.7/cf_serverd.cf`).
 You need to add a list of allowed users to `body server control`:
 
 ```
@@ -268,10 +296,11 @@ Replace the `any::` class guard with one describing the hosts where you want to 
 ## Update policy and restart server
 
 ```
-root@ip-172-31-2-67:~# cf-agent -Kf update.cf && cf-agent -K
 root@ip-172-31-2-67:~# pkill -f cf-serverd
+root@ip-172-31-2-67:~# cf-agent -Kf update.cf && cf-agent -K
 root@ip-172-31-2-67:~# systemctl start cf-serverd
 root@ip-172-31-2-67:~# systemctl restart cfengine3
+root@ip-172-31-2-67:~# cf-agent -Kf update.cf && cf-agent -K
 ```
 
 ## Voilà
@@ -300,3 +329,18 @@ cf-runner@ip-172-31-2-67:~$
 ```
 
 Locks are respected, so some runs have more output than others.
+
+## Summary
+
+In short these things are needed:
+
+* Bootstrapped CFEngine installation working and running `cf-serverd` (Preferably 3.12.1+).
+* A new user to run `cf-runagent` - Created using `adduser`.
+* A new key pair for the `cf-runagent` user - Created by running `cf-key` as that user.
+* There must be a policy entry point with correct permissions at `~/.cfagent/inputs/promises.cf`. (It can be an empty file).
+* The server must trust the `cf-runagent` client key - must be present in `/var/cfengine/ppkeys/` with correct name.
+* The `cf-runagent` client must trust the server key - must be present in `~/.cfagent/ppkeys/` with correct name.
+* The `cf-runagent` user must be added to `allowusers` in the server policy - either directly or through `def.json` (3.12.1+).
+
+In some cases/versions, you will have to run update policy and/or restart the `cfengine3` service for changes to take effect.
+Tested on CFEngine Enterprise Hub, version 3.12.1, 3.10.5, and 3.7.8.
