@@ -180,8 +180,8 @@ If you forget the `.pub` extension, or get the file name wrong in any way, it wi
 
 In a new installation, `cf-serverd` automatically trusts new keys, placing them into `/var/cfengine/ppkeys`.
 This behavior is controlled by `trustkeysfrom` in the `cf-serverd` policy.
-It is recommended to disable or stricten this feature, so the server doesn't automatically trust new keys.
-If you have already disabled this, and need to manually trust the new client key we generated, you can do so by copying the public key file:
+It is recommended to disable or tighten this feature, so the server doesn't automatically trust new keys.
+If you have already disabled it, and need to manually trust the new client key we generated, you can do so by copying the public key file:
 
 ```
 cf-runner@ip-172-31-2-67:~$ cf-runagent -H 172.31.2.67
