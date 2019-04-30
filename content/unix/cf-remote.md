@@ -127,12 +127,18 @@ $ cf-remote -H 34.252.28.73 run "cat txt"
 This is especially useful to run commands on many hosts.
 `-H` accepts a comma separated list or a path to a file (beginning with `./`, `/`, `../` or `~/`).
 
-## Config Management Camp 2019
+## Videos
 
 `cf-remote` was introduced, with some live demos, in my talk at [CfgMgmtCamp](https://cfgmgmtcamp.eu/) 2019.
-The video recording is available on YouTube:
+The video recording is available on YouTube (`cf-remote` part starts at [20:51](https://www.youtube.com/watch?v=q50_QTd1AN4&t=20m51s)):
 
-https://www.youtube.com/watch?v=q50_QTd1AN4&t=20m51s
+https://www.youtube.com/watch?v=q50_QTd1AN4
+
+We also made some videos showing how to install and use `cf-remote`:
+
+[Install cf-remote](https://youtu.be/cEipwS4SePc)
+
+[Deploying CFEngine using cf-remote](https://youtu.be/l4kJ4qAvT1I)
 
 ## Getting started
 
