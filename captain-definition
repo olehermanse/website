@@ -2,10 +2,9 @@
  "schemaVersion" :1 ,
  "dockerfileLines" :[
                        "FROM alpine AS build",
-                       "ENV WEB_DOCUMENT_INDEX index.html",
+                       "RUN apk update && apk upgrade && apk add --no-cache bash git openssh",
                        "ADD ./src /website",
                        "WORKDIR /website",
-                       "RUN apk add git",
                        "ADD https://github.com/gohugoio/hugo/releases/download/v0.55.5/hugo_0.55.5_Linux-64bit.tar.gz hugo.tar.gz",
                        "RUN tar -zxvf hugo.tar.gz",
                        "RUN git submodule update --init --recursive",
