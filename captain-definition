@@ -8,7 +8,7 @@
                        "ADD https://github.com/gohugoio/hugo/releases/download/v0.55.5/hugo_0.55.5_Linux-64bit.tar.gz hugo.tar.gz",
                        "RUN tar -zxvf hugo.tar.gz",
                        "RUN git submodule update --init --recursive",
-                       "RUN hugo -v",
+                       "RUN ./hugo -v",
                        "RUN cp -r ./public /app",
                        "FROM nginx:stable-alpine",
                        "COPY --from=build /website/public /usr/share/nginx/html"
