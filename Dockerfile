@@ -6,5 +6,6 @@ ADD https://github.com/gohugoio/hugo/releases/download/v0.55.5/hugo_0.55.5_Linux
 RUN tar -zxvf hugo.tar.gz
 RUN git submodule update --init --recursive
 RUN ./hugo -v
+
 FROM nginx:stable-alpine
 COPY --from=build /website/public /usr/share/nginx/html
