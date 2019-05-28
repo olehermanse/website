@@ -23,7 +23,7 @@
       }
 
       /* Link inside h1 (ohm logo/title) */
-      h1>a {
+      h1 > a {
         /* Make link have no special style, normal color and no underline: */
         color: inherit;
         text-decoration: none;
@@ -69,7 +69,7 @@
         align-items: center;
       }
 
-      .tool>div {
+      .tool > div {
         padding: 1em;
       }
 
@@ -249,15 +249,6 @@
         }
       }
 
-      function set_color(element, color) {
-        element.setAttribute("stroke", color);
-        if (element.tagName === "polyline" || element.tagName === "polygon") {
-          element.setAttribute("fill", "none");
-        } else {
-          element.setAttribute("fill", color);
-        }
-      }
-
       function add_temporary_element(element) {
         element.classList.add("tmp");
         var drawing = document.getElementById("drawing");
@@ -268,7 +259,6 @@
         var temps = get_temporary_elements();
         for (let element of temps) {
           element.classList.remove("tmp");
-          set_color(element, "black");
         }
       }
 
@@ -491,11 +481,15 @@
         if (get_temporary_elements().length === 0) {
           wire_start(x, y);
         } else {
-          var wire = get_temporary_elements()[0];
+          var wire = get_temporary_elements()[0]; // Assume there is only 1 temporary wire
           var points = get_points(wire);
-          var start = points[0];
-          var end = points[points.length - 2];
-          if (start.x === x && start.y === y || end.x === x && end.y === y) {
+
+          // Get the first point and last point we clicked:
+          var first = points[0];
+          var last = points[points.length - 2]; // - 2 because - 1 is the hovering point
+
+          // End the wire if you connected with the first, or clicked the same point twice:
+          if (first.x === x && first.y === y || last.x === x && last.y === y) {
             wire_end();
           } else {
             wire_continue(x, y);
