@@ -4,16 +4,21 @@ title = "olehermanse"
 theme = "kiss"
 copyright = "&copy; <a href=\"https://github.com/olehermanse\">Ole Herman Schumacher Elgesem</a> 2018"
 # Number of posts per page
-Paginate = 5
+Paginate = 10
 enableRobotsTXT = true
 
 [params.assets]
 customCSS = ["css/custom.css"]
 
+[params.rss] # Adding this tag enables RSS feed
+includeContent = true # Includes whole content in rss
+authorName = "Ole Herman S. Elgesem" # Author full name
+authorEmail = "oleherman93@gmail.com" # Author email
+
 [params.info]
 adsense = "" # Adsense ID (ID only, without ca-pub-)
 enableSocial = true # Adds OpenGraph and Twitter cards
-homeTitle = "" # Title for home page
+homeTitle = "olehermanse" # Title for home page
 poweredby = true # Adds powered by hugo and kiss below Copyright
 related = true # Includes related articles at the bottom of the article
 
@@ -30,7 +35,6 @@ page = "" # Twitter Page username. If not set, params.social.twitter will be use
 "/gamedev/" = "GameDev"
 
 [params.social]
-
 twitter = "olehermanse"
 instagram = "olehermanse"
 email = "oleherman93@gmail.com"
@@ -39,7 +43,7 @@ gitlab = "olehermanse"
 github = "olehermanse"
 
 [params.social.config]
-platforms = ["twitter", "instagram", "email", "linkedin", "gitlab", "github"]
+platforms = ["instagram", "email", "linkedin", "gitlab", "github", "twitter"]
 
 [taxonomies]
 tag = "tags"
