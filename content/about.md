@@ -10,6 +10,7 @@ I love video games, security and open source, and I also like to teach, write, a
 
 ## Projects
 
+* [dagensquiz.no](https://dagensquiz.no) / [dailyquiz.app](https://dailyquiz.app) - Randomized quiz every day
 * [mrpg](https://github.com/olehermanse/mrpg) - A turn based RPG
 * [ohm](https://github.com/olehermanse/ohm) - An easy way to draw circuit diagrams/schematics
 * [schem](https://github.com/olehermanse/schem) - Simplistic electronics circuits for use in theses / papers
