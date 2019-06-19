@@ -33,6 +33,7 @@ page = "" # Twitter Page username. If not set, params.social.twitter will be use
 [params.sections_left]
 "/unix/" = "UNIX"
 "/gamedev/" = "GameDev"
+"/about" = "About"
 
 [params.social]
 twitter = "olehermanse"
