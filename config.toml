@@ -2,7 +2,7 @@ baseurl = "/"
 languageCode = "en"
 title = "olehermanse"
 theme = "kiss"
-copyright = "&copy; <a href=\"https://github.com/olehermanse\">Ole Herman Schumacher Elgesem</a> 2018"
+copyright = "&copy; <a href=\"https://github.com/olehermanse\">Ole Herman Schumacher Elgesem</a> 2019"
 # Number of posts per page
 Paginate = 10
 enableRobotsTXT = true
