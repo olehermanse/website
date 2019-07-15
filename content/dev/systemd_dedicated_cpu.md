@@ -9,6 +9,8 @@ tags:
   - "cfengine"
   - "configuration"
   - "unix"
+aliases:
+  - /unix/systemd_dedicated_cpu/
 ---
 
 This post is based on an excellent article from Red Hat:

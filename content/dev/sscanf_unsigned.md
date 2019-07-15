@@ -7,6 +7,8 @@ tags:
   - "C"
   - "development"
   - "unix"
+aliases:
+  - /unix/sscanf_unsigned/
 ---
 
 `printf` and `scanf` are the C standard library functions for printing out and reading in data.

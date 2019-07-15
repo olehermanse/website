@@ -8,6 +8,8 @@ tags:
   - "security"
   - "development"
   - "unix"
+aliases:
+  - /unix/asan_examples/
 ---
 
 [AddressSanitizer](https://github.com/google/sanitizers/wiki/AddressSanitizer) is a great tool for finding bugs in C or C++ projects.

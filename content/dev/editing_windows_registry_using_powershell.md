@@ -6,6 +6,8 @@ tags:
   - "configuration"
   - "powershell"
   - "windows"
+aliases:
+  - /unix/editing_windows_registry_using_powershell/
 ---
 
 CFEngine Enterprise supports Windows and [Windows Registry](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/structure-of-the-registry) manipulation.

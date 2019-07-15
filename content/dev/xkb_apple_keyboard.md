@@ -6,6 +6,8 @@ tags:
   - "mac"
   - "unix"
   - "configuration"
+aliases:
+  - /unix/xkb_apple_keyboard/
 ---
 
 _Alternatively: How xkb works, and how to change keys which are wrong._

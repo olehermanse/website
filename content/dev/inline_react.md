@@ -12,6 +12,8 @@ tags:
   - "frontend"
   - "react"
   - "materialui"
+aliases:
+  - /unix/inline_react/
 ---
 
 
