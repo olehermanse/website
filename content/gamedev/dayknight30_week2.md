@@ -90,14 +90,4 @@ Just like [last week](../dayknight30_week1) here is a changelog generated from m
 * [Added build folder to .gitignore](https://github.com/olehermanse/mrpg/commit/7ef8cf382e51efa45c9cdae10f0c5868139d0cf2)
 * [GUI is now the default version(--terminal for shell only)](https://github.com/olehermanse/mrpg/commit/79a1196c22ea3969a9f72786843d633a4aff334e)
 
-See [github.com/olehermanse/mrpg](https://github.com/olehermanse/mrpg) for more details.
-
-#### Generating markdown changelogs using git
-
-The changelog was generated using:
-```bash
-$ git log --pretty=format:"* [%s](https://github.com/olehermanse/mrpg/commit/%H)" 733bf2f..HEAD
-```
-(This prints all commits after `733bf2f` - which was the end of the previous changelog)
-
-I thought this might be useful to leave here for future reference.
+[Generated using `git log`](/dev/markdown_git_changelogs).

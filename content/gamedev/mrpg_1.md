@@ -104,12 +104,4 @@ Adding features or [making changes to the combat system is intuitive](https://gi
 * [Fixed window resizing](https://github.com/olehermanse/mrpg/commit/ce32ce09f797759d3ace475fb4b2de4d899383ba)
 * [Fixed resolution problems on mac](https://github.com/olehermanse/mrpg/commit/7060b304daab41a3c525f4856fce16d3eab7937a)
 
-### Generating markdown changelogs using git
-
-The changelog was generated using:
-
-```bash
-$ git log --pretty=format:"* [%s](https://github.com/olehermanse/mrpg/commit/%H)" 09facd30..HEAD
-```
-
-(This prints all commits after `09facd30` - which was the end of the previous changelog)
+[Generated using `git log`](/dev/markdown_git_changelogs).
