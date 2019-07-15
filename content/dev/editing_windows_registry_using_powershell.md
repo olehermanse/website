@@ -1,7 +1,6 @@
 ---
 title: "Editing windows registry using PowerShell"
 date: 2019-03-18T23:38:22+01:00
-draft: false
 tags:
   - "cfengine"
   - "configuration"

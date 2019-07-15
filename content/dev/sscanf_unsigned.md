@@ -1,7 +1,6 @@
 ---
 title: "Scanning unsigned types in C"
 date: 2018-11-11T14:26:22+01:00
-draft: false
 categories:
   - "Development"
 tags:

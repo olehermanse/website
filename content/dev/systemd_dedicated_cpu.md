@@ -1,7 +1,6 @@
 ---
 title: "Using Systemd to ensure unit(s) run on one CPU core"
 date: 2018-07-27T13:59:03+02:00
-draft: false
 categories:
   - "Development"
   - "System Management"

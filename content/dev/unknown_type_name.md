@@ -1,7 +1,6 @@
 ---
 title: "Unknown type name 'u_int'"
 date: 2018-10-20T15:49:10+02:00
-draft: false
 categories:
   - "Development"
 tags:

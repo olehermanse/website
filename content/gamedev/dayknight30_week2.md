@@ -10,7 +10,6 @@ tags:
   - "mrpg"
   - "dk30"
   - "rpg"
-draft: false
 ---
 
 Following [the initial plan](../dayknight30), I worked on effects this week.

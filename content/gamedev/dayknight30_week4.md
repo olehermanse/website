@@ -1,7 +1,6 @@
 ---
 title: "The DayKnight 30-day project - Week 4 / Final update"
 date: 2018-06-06T22:06:08+02:00
-draft: false
 categories:
   - "Development"
   - "Game Development"
@@ -10,7 +9,6 @@ tags:
   - "mrpg"
   - "dk30"
   - "rpg"
-draft: false
 ---
 
 [DK30](../dayknight30) has been over for quite some time.

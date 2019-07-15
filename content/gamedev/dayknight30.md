@@ -9,7 +9,6 @@ tags:
   - "gamedev"
   - "mrpg"
   - "dk30"
-draft: false
 ---
 
 I've watched, and been a fan of, video game streamer [Sean "Day9" Plott](https://day9.tv) for many years.

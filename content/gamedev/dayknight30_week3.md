@@ -10,7 +10,6 @@ tags:
   - "mrpg"
   - "dk30"
   - "rpg"
-draft: false
 ---
 
 [DK30](../dayknight30) has officially ended.

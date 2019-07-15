@@ -12,7 +12,6 @@ tags:
   - "rpg"
   - "gui"
   - "ux"
-draft: false
 ---
 [This weeks task](../dayknight30) was to experiment and implement a better User Interface.
 I used pyglet to make a simple GUI, which currently has the same functionality as the terminal version.

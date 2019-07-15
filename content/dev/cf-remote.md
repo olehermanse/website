@@ -1,7 +1,6 @@
 ---
 title: "Introducing cf-remote: Tooling to deploy CFEngine"
 date: 2019-03-11T10:38:06+01:00
-draft: false
 tags:
   - "cfengine"
   - "unix"

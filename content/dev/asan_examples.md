@@ -1,7 +1,6 @@
 ---
 title: "AddressSanitizer (ASAN) examples"
 date: 2018-10-06T03:29:14+02:00
-draft: false
 categories:
   - "Development"
 tags:
