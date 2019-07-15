@@ -1,11 +1,12 @@
 ---
-title: "Mistakes found in real C code"
+title: "Mistakes found in C code"
 date: 2019-04-10T11:38:06+02:00
-draft: false
+draft: true
 tags:
-  - "cfengine"
   - "unix"
-  - "configuration"
+  - "c"
+  - "posix"
+  - "programming"
 ---
 
 ```C

@@ -5,7 +5,7 @@ draft: true
 ---
 
 ```
-olehermanse@OHMBP-1777 core $ cat test.c
+$ cat test.c
 #include <stdio.h>
 
 int main(void)
@@ -20,7 +20,7 @@ int main(void)
   }
   return 0;
 }
-olehermanse@OHMBP-1777 core $ gcc -O3 test.c -o test && ./test
+$ gcc -O3 test.c -o test && ./test
 (100000000) 4294967296 -> 0
 (200000000) 8589934592 -> 0
 (300000000) 12884901888 -> 0

@@ -1,5 +1,5 @@
 ---
-title: "Error handling in C"
+title: "Sane error handling in C"
 date: 2018-12-17T14:25:20+01:00
 draft: true
 ---
