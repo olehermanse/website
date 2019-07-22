@@ -17,7 +17,8 @@ I love video games, security and open source, and I also like to teach, write, a
 
 ## Open Source Contributions
 
-* [CFEngine community](https://github.com/cfengine/core/pulls?utf8=%E2%9C%93&q=author%3Aolehermanse) (Work)
+* [CFEngine community](https://github.com/cfengine/core/pulls?utf8=%E2%9C%93&q=author%3Aolehermanse) - Configuration management / Server Infrastructure Automation (Work)
+* [pyglet](https://github.com/pyglet/pyglet/pulls?utf8=%E2%9C%93&q=author%3Aolehermanse) - A windowing / media library for Python
 
 ## Talks
 
