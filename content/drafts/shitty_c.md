@@ -27,13 +27,6 @@ void FilterResults(Filter *filter)
 }
 ```
 
-### Recipe for a memory leak
-
-* Long function (80+ lines)
-* Multiple (early) returns
-* Multiple pointers which have to be freed
-* Booleans / conditions for when to free said pointers
-
 ```C
 const char *StatusString(enum Status status)
 {
