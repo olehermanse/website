@@ -39,9 +39,10 @@ page = "" # Twitter Page username. If not set, params.social.twitter will be use
 twitter = "olehermanse"
 linkedin = "olehermanse"
 github = "olehermanse"
+youtube = "olehermanse"
 
 [params.social.config]
-platforms = ["twitter", "linkedin", "github"]
+platforms = ["twitter", "youtube", "linkedin", "github"]
 
 [taxonomies]
 tag = "tags"
