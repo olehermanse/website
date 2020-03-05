@@ -23,3 +23,4 @@ I love video games, security and open source, and I also like to teach, write, a
 ## Talks
 
 * [CFToolkit: New tooling in CFEngine 3.10, 3.12, and beyond](https://www.youtube.com/watch?v=q50_QTd1AN4)
+* [Modernizing the CFEngine Project](https://www.youtube.com/watch?v=mREWIz2zqws)
