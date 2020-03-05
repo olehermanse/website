@@ -8,4 +8,5 @@ RUN git submodule update --init --recursive
 RUN ./hugo -v
 
 FROM nginx:stable-alpine
+RUN sed -i "s%default_type  application/octet-stream%default_type  text/plain%g" /etc/nginx/nginx.conf
 COPY --from=build /website/public /usr/share/nginx/html
