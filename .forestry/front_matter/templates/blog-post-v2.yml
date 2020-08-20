@@ -17,3 +17,5 @@ fields:
 - type: list
   name: tags
   label: tags
+pages:
+- content/dev/test-post.md
