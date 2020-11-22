@@ -77,3 +77,9 @@ There are some things I'd like to implement:
 - Money-making towers
 - Particle effects
 - More interesting map with randomized walls
+
+## Play
+
+You can try the game now:
+
+https://towers.oleherman.com/
