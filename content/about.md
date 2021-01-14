@@ -10,7 +10,7 @@ I love video games, security and open source, and I also like to teach, write, a
 
 ## Side Projects
 
-* [towers](https://github.com/olehermanse/towers) - A tower defense game in the browser
+* [towers](https://towers.oleherman.com) - A tower defense game in the browser
 * [ohm](https://github.com/olehermanse/ohm) - An easy way to draw circuit diagrams/schematics
 * [mrpg](https://github.com/olehermanse/mrpg) - A turn based RPG
 * [dagensquiz.no](https://dagensquiz.no) / [dailyquiz.app](https://dailyquiz.app) - Randomized quiz every day
