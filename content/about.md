@@ -10,9 +10,10 @@ I love video games, security and open source, and I also like to teach, write, a
 
 ## Side Projects
 
-* [dagensquiz.no](https://dagensquiz.no) / [dailyquiz.app](https://dailyquiz.app) - Randomized quiz every day
-* [mrpg](https://github.com/olehermanse/mrpg) - A turn based RPG
+* [towers](https://github.com/olehermanse/towers) - A tower defense game in the browser
 * [ohm](https://github.com/olehermanse/ohm) - An easy way to draw circuit diagrams/schematics
+* [mrpg](https://github.com/olehermanse/mrpg) - A turn based RPG
+* [dagensquiz.no](https://dagensquiz.no) / [dailyquiz.app](https://dailyquiz.app) - Randomized quiz every day
 * [schem](https://github.com/olehermanse/schem) - Simplistic electronics circuits for use in theses / papers
 
 ## Open Source Contributions
@@ -22,5 +23,5 @@ I love video games, security and open source, and I also like to teach, write, a
 
 ## Talks
 
-* [CFToolkit: New tooling in CFEngine 3.10, 3.12, and beyond](https://www.youtube.com/watch?v=q50_QTd1AN4)
 * [Modernizing the CFEngine Project](https://www.youtube.com/watch?v=mREWIz2zqws)
+* [CFToolkit: New tooling in CFEngine 3.10, 3.12, and beyond](https://www.youtube.com/watch?v=q50_QTd1AN4)
