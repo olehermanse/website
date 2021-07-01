@@ -216,8 +216,6 @@ cf-agent -KIf update.cf
 cf-agent -KI
 ```
 
-(`-KI` is short for `--no-lock --info`)
-
 Depending on how long you waited before running these commands, CFEngine might have ran in the meantime.
 In that case, our agent runs will not copy any files, make any changes, or print any log messages.
 
