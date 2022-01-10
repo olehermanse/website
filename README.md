@@ -1,3 +1,3 @@
 # Personal website
 
-https://oleherman.com/
+https://oleherman.com
