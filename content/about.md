@@ -1,5 +1,5 @@
 ---
-title: "Ole Herman S. Elgesem - Software Developer"
+title: "Ole Herman S. Elgesem - About"
 hidden: true
 ---
 
@@ -8,7 +8,7 @@ Professionally I develop the [CFEngine](https://github.com/cfengine/core) C clie
 In my spare time, I make websites, games and other neat things, in Rust, Python, and js/html/css.
 I love video games, security and open source, and I also like to teach, write, and travel.
 
-## Side Projects
+## Side projects
 
 * [towers](https://towers.oleherman.com) - A tower defense game in the browser
 * [ohm](https://github.com/olehermanse/ohm) - An easy way to draw circuit diagrams/schematics
@@ -16,7 +16,7 @@ I love video games, security and open source, and I also like to teach, write, a
 * [dagensquiz.no](https://dagensquiz.no) / [dailyquiz.app](https://dailyquiz.app) - Randomized quiz every day
 * [schem](https://github.com/olehermanse/schem) - Simplistic electronics circuits for use in theses / papers
 
-## Open Source Contributions
+## Open source contributions
 
 * [CFEngine community](https://github.com/cfengine/core/pulls?utf8=%E2%9C%93&q=author%3Aolehermanse) - Configuration management / Server Infrastructure Automation (Work)
 * [pyglet](https://github.com/pyglet/pyglet/pulls?utf8=%E2%9C%93&q=author%3Aolehermanse) - A windowing / media library for Python
