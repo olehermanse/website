@@ -23,8 +23,7 @@ What happens if you try to `sscanf` a negative number using `%lu`?
 Unfortunately, `sscanf` does match negative numbers for `unsigned` format strings.
 As an example, we can scan `"-10"` with format `"%lu"`:
 
-```
-$ cat test.c
+```C
 #include <stdio.h>
 
 int main(void)
@@ -57,10 +56,9 @@ One option is to check for the `-` sign before scanning, but this can be quite c
 The other option is to scan into a signed type, check the value, and then error if it's incorrect.
 This means you lose 1 bit for the signed type, you cannot read as large numbers, but for most situations `signed long` is big enough.
 
-A simple example:
+A simple example (`test.c`):
 
-```
-$ cat test.c
+```C
 #include <stdio.h>
 
 int main(int argc, char **argv)

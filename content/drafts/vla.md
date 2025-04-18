@@ -9,8 +9,7 @@ tags:
   - "programming"
 ---
 
-```
-$ cat test.c
+```C
 #include <stdio.h>
 #include <string.h>
 
@@ -20,6 +19,9 @@ int main(int argc, char **argv)
   printf("%d\n", (int) sizeof(cmd));
   return 0;
 }
+```
+
+```
 $ gcc test.c -o test
 $ ./test abc
 13

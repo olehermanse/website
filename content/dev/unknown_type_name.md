@@ -17,10 +17,9 @@ After quite some time I figured out what the problem was, so I thought I'd share
 
 ## Simplified example
 
-The source code, when simplified, looked something like this:
+The source code, when simplified, looked something like this (`test.c`):
 
-```
-$ cat test.c
+```C
 #define _XOPEN_SOURCE 500
 #include <sys/attr.h>
 #include <stdio.h>
@@ -29,7 +28,6 @@ int main(void)
 {
     printf("Hello, world!");
 }
-$
 ```
 
 ## Compiler output
@@ -88,7 +86,7 @@ In file included from test.c:2:
 I had never seen the macro `_XOPEN_SOURCE` before.
 [It turns out](https://stackoverflow.com/questions/5378778/what-does-d-xopen-source-do-mean), this specifies the X/OPEN or POSIX standard you are writing for.
 
-```
+```C
 #define _XOPEN_SOURCE 500
 ```
 

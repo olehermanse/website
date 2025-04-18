@@ -20,8 +20,7 @@ There are [great resources](https://www.youtube.com/watch?v=V2_80g0eOMc) for [un
 
 ## A minimal C code example - the buffer overflow
 
-```
-$ cat test.c
+```C
 #include <stdio.h>
 
 int main(void)
@@ -79,8 +78,7 @@ The stacktrace and variable name is usually sufficient to find the error.
 
 Here is an even shorter example, which is very similar, and detected in exactly the same way:
 
-```
-$ cat test.c
+```C
 #include <stdio.h>
 
 int main(void)

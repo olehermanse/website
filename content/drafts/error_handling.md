@@ -4,7 +4,7 @@ date: 2018-12-17T14:25:20+01:00
 draft: true
 ---
 
-```
+```C
 bool connect_and_write(char *ip, char *data)
 {
     Connection *connection = connect(ip);

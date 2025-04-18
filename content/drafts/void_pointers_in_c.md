@@ -4,7 +4,7 @@ date: 2019-09-26T01:45:03+02:00
 draft: true
 ---
 
-```
+```C
 #include <stdio.h>
 
 typedef struct _Nums {

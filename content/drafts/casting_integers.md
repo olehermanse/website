@@ -4,7 +4,7 @@ date: 2018-12-17T14:25:20+01:00
 draft: true
 ---
 
-```
+```C
 $ cat test.c
 #include <stdio.h>
 

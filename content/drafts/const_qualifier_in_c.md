@@ -26,7 +26,6 @@ const char *const pointer_to_char;
 
 (I use whitespace in this way to make it less ambiguous).
 
-
 What do you mean by "following the language specifications"? [The ISO C11 standard](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf) calls these qualifiers, and does not specify whether you should put them before or after the first _type-specifier_ in a _type-name_, both are allowed by the syntax definition.
 
 However, they do consistently use my preferred style, placing the const before the first _type-specifier_, in all the examples:
@@ -55,12 +54,9 @@ int *const constant_ptr;
 
 [glibc also seems to mostly follow the same convention.](https://github.com/bminor/glibc/blob/master/posix/execv.c#L23)
 
-
 What I wrote above applies for both [ANSI C](https://www.pdf-archive.com/2014/10/02/ansi-iso-9899-1990-1/ansi-iso-9899-1990-1.pdf), as well as the K&R book. They don't say whether to put it before or after, the syntax definitions allow both, and they put it first in examples. Maybe you read it somewhere else (course material, blog post, etc.), but it doesn't seem to be part of any of the standards.
 
-
-
-```
+```C
 #include <stdio.h>
 
 int main(void)
@@ -90,8 +86,7 @@ int main(void)
 }
 ```
 
-
-```
+```C
 #include <stdio.h>
 
 int main(void)
@@ -128,8 +123,7 @@ int main(void)
 }
 ```
 
-
-```
+```C
 #include <stdio.h>
 
 int print_arg_0(const char *const *argv)
