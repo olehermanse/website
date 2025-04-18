@@ -3,9 +3,10 @@ languageCode = "en"
 title = "olehermanse"
 theme = "kiss"
 copyright = "&copy; <a href=\"https://github.com/olehermanse\">Ole Herman Schumacher Elgesem</a> 2021"
-# Number of posts per page
-Paginate = 10
 enableRobotsTXT = true
+
+[pagination]
+  pagerSize = 15
 
 [params.assets]
 customCSS = ["css/custom.css"]
