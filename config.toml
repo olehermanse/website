@@ -38,13 +38,13 @@ page = "" # Twitter Page username. If not set, params.social.twitter will be use
 
 [params.social]
 bluesky = "olehermanse.bsky.social"
-twitter = "olehermanse"
+mastodon = "infosec.exchange/@olehermanse"
 linkedin = "olehermanse"
 github = "olehermanse"
 youtube = "olehermanse"
 
 [params.social.config]
-platforms = ["bluesky", "twitter", "youtube", "linkedin", "github"]
+platforms = ["bluesky", "mastodon", "youtube", "linkedin", "github"]
 
 [taxonomies]
 tag = "tags"
