@@ -35,6 +35,7 @@ $
 ## Compiler output
 
 When compiled in [GCC](https://gcc.gnu.org/), on OS X, you get errors from the included file `sys/attr.h`:
+
 ```
 $ gcc-8 test.c -o test.o
 In file included from /usr/include/sys/attr.h:42,
@@ -58,6 +59,7 @@ In file included from test.c:2:
 ```
 
 And the same in [clang](https://clang.llvm.org/):
+
 ```
 $ clang test.c -o test.o
 In file included from test.c:2:

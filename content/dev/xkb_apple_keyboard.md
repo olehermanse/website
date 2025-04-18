@@ -73,6 +73,7 @@ There is a per-keyboard-model mapping in `/usr/share/X11/xkb/keycodes/`.
 They map the decimal keycodes to an abstract button name.
 
 Here is an example:
+
 ```
     <LSTG> = 49;
 ```

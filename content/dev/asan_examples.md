@@ -71,6 +71,7 @@ READ of size 4 at 0x7ffee419d4c0 thread T0
 [...]
 $
 ```
+
 I stripped away some of the output to highlight important information.
 The stacktrace and variable name is usually sufficient to find the error.
 
@@ -102,6 +103,7 @@ $ make CFLAGS="-fsanitize=address" LDFLAGS="-fsanitize=address -pthread"
 ```
 
 The same flags worked for unit tests:
+
 ```
 $ cd tests/unit
 $ make CFLAGS="-fsanitize=address" LDFLAGS="-fsanitize=address -pthread" check

@@ -37,6 +37,7 @@ Get-ItemProperty -Path "HKLM:\SOFTWARE\CFEngine\" -Name "VERSION"
 ## Create
 
 Create a new key (folder) at a path:
+
 ```
 New-Item -Path "HKLM:\SOFTWARE\" -Name "CFEngine"
 ```

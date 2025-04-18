@@ -27,10 +27,10 @@ This month I will work on 4 "big" features for the game.
 
 The project is divided up into 4 weeks, each with separate tasks and focuses:
 
-* **Week 1:** Experiment with UI and graphics.
-* **Week 2:** Effects (Buffs and debuffs caused by skills)
-* **Week 3:** Progression - levelling, unlocking skills
-* **Week 4:** Content - Add more skills, enemies, "dungeons". Finish loose ends for a playable demo/prototype.
+- **Week 1:** Experiment with UI and graphics.
+- **Week 2:** Effects (Buffs and debuffs caused by skills)
+- **Week 3:** Progression - levelling, unlocking skills
+- **Week 4:** Content - Add more skills, enemies, "dungeons". Finish loose ends for a playable demo/prototype.
 
 The project is running from April 4th to May 4th.
 Since I joined a few days late, I will allow some additional time for week 1.

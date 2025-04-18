@@ -31,6 +31,7 @@ Tested using CFEngine 3.12 on CentOS 7.
 ### Listing all processes and their core
 
 We can use ps to check CPU core for desired processes:
+
 ```
 $ ps x -o pid,psr,comm
   PID PSR COMMAND
@@ -76,6 +77,7 @@ $ systemctl status cfengine3
 ```
 
 The other services, like `cf-serverd` and `cf-execd` etc. are in the same folder:
+
 ```
 $ ls -al /usr/lib/systemd/system/ | grep [c]f
 -rw-r--r--.  1 root root   433 Jun 28 10:03 cf-apache.service
@@ -89,6 +91,7 @@ $ ls -al /usr/lib/systemd/system/ | grep [c]f
 ```
 
 To edit them, we should make copies in `/etc/systemd/system`:
+
 ```
 $ cp /usr/lib/systemd/system/cf* /etc/systemd/system/
 $ ls -al /etc/systemd/system/ | grep [c]f
@@ -105,6 +108,7 @@ drwxr-xr-x.  2 root root   34 Jul 27 13:22 cf-postgres.service.wants
 ```
 
 If we reload and restart, we should see that systemd is now using our new copies:
+
 ```
 $ systemctl daemon-reload
 $ systemctl restart cfengine3
@@ -121,6 +125,7 @@ $ systemctl status cfengine3
 `/etc/systemd/system/cfengine3.service` is the umbrella service which starts and stops all the other services.
 We will create one shared cgroup, called `cfe_group` for the different services.
 We want to add 4 lines to set up and tear down the cgroup:
+
 ```
 ExecStartPre=/usr/bin/mkdir -p /sys/fs/cgroup/cpuset/cfe_group
 ExecStartPre=/bin/bash -c '/usr/bin/echo "1" > /sys/fs/cgroup/cpuset/cfe_group/cpuset.cpus'
@@ -128,10 +133,12 @@ ExecStartPre=/bin/bash -c '/usr/bin/echo "0" > /sys/fs/cgroup/cpuset/cfe_group/c
 
 ExecStopPost=/usr/bin/rmdir /sys/fs/cgroup/cpuset/cfe_group
 ```
+
 The _pre_ steps create a cgroup and says that all processes within it should run on cpu `1`.
 The _post_ step deletes the cgroup using `rmdir`.
 
 The final version should look like this:
+
 ```
 $ cat /etc/systemd/system/cfengine3.service
 [Unit]
@@ -176,6 +183,7 @@ ExecStopPost=/usr/bin/rmdir /sys/fs/cgroup/cpuset/cfe_group
 There is no relevant PID in this service, so we will have to add the individual PID in the different services.
 
 For each of the services you want in the cgroup (running on CPU 1), you need to add this line to the service file:
+
 ```
 ExecStartPost=/bin/bash -c '/usr/bin/echo $MAINPID >> /sys/fs/cgroup/cpuset/cfe_group/tasks'
 ```
@@ -184,6 +192,7 @@ I added it to the 4 processes we saw earlier, `cf-hub`, `cf-serverd`, `cf-execd`
 `cf-execd` spawns (forks) `cf-agent`, so the agent will also be in the same cgroup.
 
 As an example, my cf-execd service looks like this:
+
 ```
 $ cat /etc/systemd/system/cf-execd.service
 [Unit]
@@ -211,6 +220,7 @@ WantedBy=cfengine3.service
 ### Reloading and checking results:
 
 Again, we need to reload and restart to see results:
+
 ```
 $ systemctl daemon-reload
 $ systemctl restart cfengine3
@@ -227,8 +237,8 @@ A good next step is to automate this, make CFEngine set up these services with o
 
 If you want to use multiple cores for CFEngine (but not all), there are two options:
 
- * Create more cgroups and assign the services how you want them manually
- * Instead of writing `"1"` to `cpuset.cpus` use a comma-separated list:
+- Create more cgroups and assign the services how you want them manually
+- Instead of writing `"1"` to `cpuset.cpus` use a comma-separated list:
 
 ```
 ExecStartPre=/bin/bash -c '/usr/bin/echo "1,2,3" > /sys/fs/cgroup/cpuset/cfe_group/cpuset.cpus'

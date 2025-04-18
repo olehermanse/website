@@ -335,13 +335,13 @@ Locks are respected, so some runs have more output than others.
 
 In short these things are needed:
 
-* Bootstrapped CFEngine installation working and running `cf-serverd` (Preferably 3.12.1+).
-* A new user to run `cf-runagent` - Created using `adduser`.
-* A new key pair for the `cf-runagent` user - Created by running `cf-key` as that user.
-* There must be a policy entry point with correct permissions at `~/.cfagent/inputs/promises.cf`. (It can be an empty file).
-* The server must trust the `cf-runagent` client key - must be present in `/var/cfengine/ppkeys/` with correct name.
-* The `cf-runagent` client must trust the server key - must be present in `~/.cfagent/ppkeys/` with correct name.
-* The `cf-runagent` user must be added to `allowusers` in the server policy - either directly or through `def.json` (3.12.1+).
+- Bootstrapped CFEngine installation working and running `cf-serverd` (Preferably 3.12.1+).
+- A new user to run `cf-runagent` - Created using `adduser`.
+- A new key pair for the `cf-runagent` user - Created by running `cf-key` as that user.
+- There must be a policy entry point with correct permissions at `~/.cfagent/inputs/promises.cf`. (It can be an empty file).
+- The server must trust the `cf-runagent` client key - must be present in `/var/cfengine/ppkeys/` with correct name.
+- The `cf-runagent` client must trust the server key - must be present in `~/.cfagent/ppkeys/` with correct name.
+- The `cf-runagent` user must be added to `allowusers` in the server policy - either directly or through `def.json` (3.12.1+).
 
 In some cases/versions, you will have to run update policy and/or restart the `cfengine3` service for changes to take effect.
 Tested on CFEngine Enterprise Hub, version 3.12.1, 3.10.5, and 3.7.8.

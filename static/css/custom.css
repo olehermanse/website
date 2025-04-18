@@ -1,26 +1,31 @@
 .subtitle + .title {
   margin-top: -10px !important;
 }
-.content h2{
+
+.content h2 {
   margin-top: 40px !important;
 }
-.content h3{
+
+.content h3 {
   margin-top: 20px !important;
   margin-bottom: 10px !important;
 }
-.content h4{
+
+.content h4 {
   margin-top: 20px !important;
   margin-bottom: 10px !important;
 }
-.content h5{
+
+.content h5 {
   margin-top: 0px !important;
 }
-.section{
+
+.section {
   padding-bottom: 20px !important;
 }
 
 .content,
 .content > *,
-.content > * > *{
+.content > * > * {
   font-weight: 300 !important;
 }

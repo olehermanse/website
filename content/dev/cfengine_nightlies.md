@@ -12,9 +12,9 @@ This is a [work](https://cfengine.com) related post.
 Nightly packages are very useful for testing new features of CFEngine.
 Right now, nightly packages can be used to test out these new features:
 
-* [Compliance Reports.](https://www.youtube.com/watch?v=1jNxP0WVEyI)
-* Mission Portal Dark Mode.
-* New host info page with variable pinning and copy buttons.
+- [Compliance Reports.](https://www.youtube.com/watch?v=1jNxP0WVEyI)
+- Mission Portal Dark Mode.
+- New host info page with variable pinning and copy buttons.
 
 Note that these features are in development, some parts may be unfinished or buggy.
 Nightly packages are not supported and should not be used in production environments.
