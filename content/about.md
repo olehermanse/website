@@ -42,11 +42,11 @@ Here are a few notable ones:
 
 - Games:
   - [towers](https://towers.oleherman.com) - A tower defense game in the browser
+  - [dagensquiz.no](https://dagensquiz.no) / [dailyquiz.app](https://dailyquiz.app) - Randomized quiz of the day
   - [trpg](https://trpg.oleherman.com) - A browser-based black and white, turn based RPG / roguelike.
-    - [mrpg](https://github.com/olehermanse/mrpg) - Was an earlier iteration of this concept, written in Python.
+    - [mrpg](https://github.com/olehermanse/mrpg) was an earlier iteration of this concept, written in Python.
   - [tpg](https://trpg.oleherman.com) - Experimenting with multiplayer turn based games in the browser.
     For example Tic Tac Toe with 3 players, on a 7x7 board, with 4 in a row required to win.
-  - [dagensquiz.no](https://dagensquiz.no) / [dailyquiz.app](https://dailyquiz.app) - Randomized quiz of the day
 - Electronics:
   - [ohm](https://github.com/olehermanse/ohm) - An easy way to draw circuit diagrams/schematics
   - [schem](https://github.com/olehermanse/schem) - Simplistic electronics circuits for use in theses / papers
@@ -69,3 +69,13 @@ I've also sponsored a few open source projects, including:
 - [Hugo](https://github.com/gohugoio/hugo)
 - [Mastodon](https://github.com/mastodon/mastodon)
 - [tree-sitter](https://github.com/tree-sitter)
+
+## Links
+
+You can find and follow me on these websites:
+
+- **Bluesky:** [@olehermanse.bsky.social](https://bsky.app/profile/olehermanse.bsky.social).
+- **Mastodon:** [@olehermanse@infosec.exchange](https://infosec.exchange/@olehermanse).
+- **YouTube:** [youtube.com/olehermanse](https://www.youtube.com/olehermanse)
+- **Linkedin:** [linkedin.com/in/olehermanse](https://www.linkedin.com/in/olehermanse/)
+- **GitHub:** [github.com/olehermanse](https://github.com/olehermanse)
