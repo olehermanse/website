@@ -2,26 +2,26 @@ baseurl = "/"
 languageCode = "en"
 title = "olehermanse"
 theme = "kiss"
-copyright = "&copy; <a href=\"https://github.com/olehermanse\">Ole Herman Schumacher Elgesem</a> 2021"
+copyright = "&copy; <a href=\"https://github.com/olehermanse\">Ole Herman Schumacher Elgesem</a> 2025"
 enableRobotsTXT = true
 
 [pagination]
-  pagerSize = 15
+pagerSize = 15
 
 [params.assets]
 customCSS = ["css/custom.css"]
 
 [params.rss] # Adding this tag enables RSS feed
-includeContent = true # Includes whole content in rss
-authorName = "Ole Herman S. Elgesem" # Author full name
+includeContent = true                 # Includes whole content in rss
+authorName = "Ole Herman S. Elgesem"  # Author full name
 authorEmail = "oleherman93@gmail.com" # Author email
 
 [params.info]
-adsense = "" # Adsense ID (ID only, without ca-pub-)
-enableSocial = true # Adds OpenGraph and Twitter cards
+adsense = ""              # Adsense ID (ID only, without ca-pub-)
+enableSocial = true       # Adds OpenGraph and Twitter cards
 homeTitle = "olehermanse" # Title for home page
-poweredby = true # Adds powered by hugo and kiss below Copyright
-related = true # Includes related articles at the bottom of the article
+poweredby = true          # Adds powered by hugo and kiss below Copyright
+related = true            # Includes related articles at the bottom of the article
 
 [params.opengraph.facebook]
 admins = [] # array of Facebook IDs
