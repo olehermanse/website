@@ -1,7 +1,7 @@
 FROM alpine AS build
 RUN apk update && apk upgrade && apk add --no-cache bash git openssh
-ADD https://github.com/gohugoio/hugo/releases/download/v0.146.5/hugo_0.146.5_linux-amd64.tar.gz /hugo/hugo.tar.gz
-RUN echo "d45e0993ae34d28f505cba3ed40db68a3bf0e05301bdec0fa278f56320ef7115  /hugo/hugo.tar.gz" | sha256sum -c
+ADD https://github.com/gohugoio/hugo/releases/download/v0.148.2/hugo_0.148.2_linux-amd64.tar.gz /hugo/hugo.tar.gz
+RUN echo "b2fbef73c965ff439ccca0bdf15d7ca64f59363d62916326e24d5552e6968aa3  /hugo/hugo.tar.gz" | sha256sum -c
 WORKDIR /hugo
 RUN tar -zxvf hugo.tar.gz
 WORKDIR /website
