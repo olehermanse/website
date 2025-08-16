@@ -35,9 +35,9 @@ pageID = ""
 page = "" # Twitter Page username. If not set, params.social.twitter will be used.
 
 [params.sections_left]
-"/dev/" = "Dev"
-"/gamedev/" = "GameDev"
-"/about/" = "About"
+"/dev" = "Dev"
+"/gamedev" = "GameDev"
+"/about" = "About"
 
 [params.social]
 bluesky = "olehermanse.bsky.social"
