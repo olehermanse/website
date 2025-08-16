@@ -8,11 +8,11 @@ I am a programmer and security professional from Norway, with interests in softw
 ## Work
 
 At [Northern.tech](https://northern.tech/) I lead the security team and the CFEngine product team.
-We work in the systems management field, developing an over the air software updater, [Mender](https://mender.io/), and a configuration management solution, [CFEngine](https://cfengine.com/).
+We work in the systems management field, developing an over-the-air software updater, [Mender](https://mender.io/), and a configuration management solution, [CFEngine](https://cfengine.com/).
 Here are a few of the things I've worked on:
 
 - I worked on the handling, customer communication, and public announcement of several CVEs:
-  - In CFEngine: https://cfengine.com/tags/cve/
+  - In CFEngine: https://cfengine.com/tags/cve
   - In Mender: https://mender.io/blog/tag/cve
 - I've written content / blog posts on varied topics, including security, features, releases, technical content marketing and similar:
   - [Handling security vulnerabilities in our products](https://northern.tech/careers/blog/handling-security-vulnerabilities-in-our-products)
@@ -41,21 +41,21 @@ In my spare time, I work on various open source websites, tools, games and other
 Here are a few notable ones:
 
 - Games:
-  - [towers](https://towers.oleherman.com) - A tower defense game in the browser
-  - [dagensquiz.no](https://dagensquiz.no) / [dailyquiz.app](https://dailyquiz.app) - Randomized quiz of the day
+  - [towers](https://towers.oleherman.com) - A tower defense game in the browser.
+  - [dagensquiz.no](https://dagensquiz.no) / [dailyquiz.app](https://dailyquiz.app) - Randomized quiz of the day.
   - [trpg](https://trpg.oleherman.com) - A browser-based black and white, turn based RPG / roguelike.
     - [mrpg](https://github.com/olehermanse/mrpg) was an earlier iteration of this concept, written in Python.
-  - [tpg](https://trpg.oleherman.com) - Experimenting with multiplayer turn based games in the browser.
+  - [tpg](https://tpg.oleherman.com) - Experimenting with multiplayer turn based games in the browser.
     For example Tic Tac Toe with 3 players, on a 7x7 board, with 4 in a row required to win.
 - Electronics:
-  - [ohm](https://github.com/olehermanse/ohm) - An easy way to draw circuit diagrams/schematics
-  - [schem](https://github.com/olehermanse/schem) - Simplistic electronics circuits for use in theses / papers
+  - [ohm](https://github.com/olehermanse/ohm) - An easy way to draw circuit diagrams/schematics.
+  - [schem](https://github.com/olehermanse/schem) - Simplistic electronics circuits for use in theses / papers.
 
 ## Open source contributions
 
 Outside of the open source software I write at work, and the side projects mentioned above, I try to contribute to open source software:
 
-- [pyglet](https://github.com/pyglet/pyglet/pulls?utf8=%E2%9C%93&q=author%3Aolehermanse) - A windowing / media library for Python
+- [pyglet](https://github.com/pyglet/pyglet/pulls?utf8=%E2%9C%93&q=author%3Aolehermanse) - A windowing / media library for Python.
 - [Hugo KISS theme](https://github.com/ribice/kiss/pulls?q=is%3Apr+author%3Aolehermanse) the theme I use for this website.
 - [fui-kk](https://github.com/fui/fui-kk/commits?author=olehermanse) - Course evaluation software for student council at University of Oslo, department of informatics.
   We did a large upgrade when I was a student in 2016-2017, automating many manual steps, and improving the websites.
@@ -63,19 +63,26 @@ Outside of the open source software I write at work, and the side projects menti
   - [Node.js website](https://github.com/nodejs/nodejs.org/pull/7134)
   - [brew vagrant tap](https://github.com/hashicorp/homebrew-tap/pull/300)
   - [hyper rust library](https://github.com/hyperium/hyper/pull/1791)
+  - [Python (CPython)](https://github.com/python/cpython/pull/136716)
 
 I've also sponsored a few open source projects, including:
 
 - [Hugo](https://github.com/gohugoio/hugo)
-- [Mastodon](https://github.com/mastodon/mastodon)
+- [Python](https://github.com/python)
 - [tree-sitter](https://github.com/tree-sitter)
+- [curl](https://github.com/bagder)
+- [brew](https://github.com/Homebrew)
+- [Mastodon](https://github.com/mastodon/mastodon)
+- [BlackHole](https://github.com/ExistentialAudio)
+
+If you rely on the work of open source software authors, please consider donating to some of the projects you use.
 
 ## Links
 
 You can find and follow me on these websites:
 
-- **Bluesky:** [@olehermanse.bsky.social](https://bsky.app/profile/olehermanse.bsky.social).
-- **Mastodon:** [@olehermanse@infosec.exchange](https://infosec.exchange/@olehermanse).
+- **Bluesky:** [@olehermanse.bsky.social](https://bsky.app/profile/olehermanse.bsky.social)
+- **Mastodon:** [@olehermanse@infosec.exchange](https://infosec.exchange/@olehermanse)
 - **YouTube:** [youtube.com/olehermanse](https://www.youtube.com/olehermanse)
 - **Linkedin:** [linkedin.com/in/olehermanse](https://www.linkedin.com/in/olehermanse/)
 - **GitHub:** [github.com/olehermanse](https://github.com/olehermanse)
