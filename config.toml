@@ -4,6 +4,9 @@ title = "olehermanse"
 theme = "kiss"
 copyright = "&copy; <a href=\"https://github.com/olehermanse\">Ole Herman Schumacher Elgesem</a> 2025"
 enableRobotsTXT = true
+pluralizeListTitles = false
+capitaliseListTitles = false
+titleCaseStyle = "firstupper"
 
 [pagination]
 pagerSize = 15

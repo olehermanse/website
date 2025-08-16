@@ -1,5 +1,5 @@
 ---
-title: "Ole Herman S. Elgesem - About"
+title: "About"
 hidden: true
 ---
 
