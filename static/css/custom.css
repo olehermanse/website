@@ -24,8 +24,6 @@
   padding-bottom: 20px !important;
 }
 
-.content,
-.content > *,
-.content > * > * {
+.content * {
   font-weight: 300 !important;
 }
