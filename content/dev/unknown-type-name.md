@@ -93,3 +93,5 @@ I had never seen the macro `_XOPEN_SOURCE` before.
 The above value (`500`) corresponds to POSIX 1995.
 Many headers, (at least on OS X), expect types which are not available in this mode.
 _The fix was to remove the line._
+
+_This post was written entirely by a human without the use of AI / LLMs._

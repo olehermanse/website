@@ -86,3 +86,5 @@ You can find and follow me on these websites:
 - **YouTube:** [youtube.com/olehermanse](https://www.youtube.com/olehermanse)
 - **Linkedin:** [linkedin.com/in/olehermanse](https://www.linkedin.com/in/olehermanse/)
 - **GitHub:** [github.com/olehermanse](https://github.com/olehermanse)
+
+_This page was written entirely by a human without the use of AI / LLMs._

@@ -83,3 +83,5 @@ There are some things I'd like to implement:
 You can try the game now:
 
 https://towers.oleherman.com/
+
+_This post was written entirely by a human without the use of AI / LLMs._

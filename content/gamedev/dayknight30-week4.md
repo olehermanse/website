@@ -55,3 +55,5 @@ I will keep posting updates about the game, although not under the DK30 label.
 - [Added some basic (unfinished) sprites](https://github.com/olehermanse/mrpg/commit/54b76bd84221bbba127b70808e64311b80aa745d)
 - [Renamed platform subpackage to system](https://github.com/olehermanse/mrpg/commit/2f138ba8c770ca22e5107abffb168feec134ca9f)
 - [Added binary git attribute to png files](https://github.com/olehermanse/mrpg/commit/bc7c4a9b7f0bfbda14fc7d97396849004421c617)
+
+_This post was written entirely by a human without the use of AI / LLMs._

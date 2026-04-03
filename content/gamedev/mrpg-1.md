@@ -105,3 +105,5 @@ Adding features or [making changes to the combat system is intuitive](https://gi
 - [Fixed resolution problems on mac](https://github.com/olehermanse/mrpg/commit/7060b304daab41a3c525f4856fce16d3eab7937a)
 
 [Generated using `git log`](/dev/markdown_git_changelogs).
+
+_This post was written entirely by a human without the use of AI / LLMs._

@@ -345,3 +345,5 @@ In short these things are needed:
 
 In some cases/versions, you will have to run update policy and/or restart the `cfengine3` service for changes to take effect.
 Tested on CFEngine Enterprise Hub, version 3.12.1, 3.10.5, and 3.7.8.
+
+_This post was written entirely by a human without the use of AI / LLMs._

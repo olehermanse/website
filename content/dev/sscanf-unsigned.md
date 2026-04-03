@@ -103,3 +103,5 @@ $ ./test
 Error: Please provide exactly 1 string argument.
 $
 ```
+
+_This post was written entirely by a human without the use of AI / LLMs._

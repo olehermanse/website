@@ -83,3 +83,5 @@ For the extra interested I've generated a changelog based on my commit history:
 - [Sane importing/module behavior](https://github.com/olehermanse/mrpg/commit/9a81003632b5415f17426a3ad3e940c4e1c2d293)
 
 See [github.com/olehermanse/mrpg](https://github.com/olehermanse/mrpg) for more details.
+
+_This post was written entirely by a human without the use of AI / LLMs._

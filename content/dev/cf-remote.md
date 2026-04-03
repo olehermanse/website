@@ -161,3 +161,5 @@ Anyone can contribute to `cf-remote`, we have a curated list of tickets to pick 
 https://tracker.mender.io/issues/?filter=11704
 
 Additional platform support (beyond dpkg and rpm) and parallellized installation are good next features.
+
+_This post was written entirely by a human without the use of AI / LLMs._

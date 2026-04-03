@@ -216,3 +216,5 @@ React (and JSX) documentation: https://reactjs.org
 An overview of JavaScript build systems: https://ponyfoo.com/articles/choose-grunt-gulp-or-npm
 
 More information on npm scripts: https://medium.freecodecamp.org/why-i-left-gulp-and-grunt-for-npm-scripts-3d6853dd22b8
+
+_This post was written entirely by a human without the use of AI / LLMs._

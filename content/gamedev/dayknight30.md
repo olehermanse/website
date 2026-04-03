@@ -39,3 +39,5 @@ Since I joined a few days late, I will allow some additional time for week 1.
 
 The game project is available [on GitHub](https://github.com/olehermanse/mrpg).
 Anyone interested can follow along there, and I plan to put some updates here as well.
+
+_This post was written entirely by a human without the use of AI / LLMs._

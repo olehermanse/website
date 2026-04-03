@@ -243,3 +243,5 @@ If you want to use multiple cores for CFEngine (but not all), there are two opti
 ```
 ExecStartPre=/bin/bash -c '/usr/bin/echo "1,2,3" > /sys/fs/cgroup/cpuset/cfe_group/cpuset.cpus'
 ```
+
+_This post was written entirely by a human without the use of AI / LLMs._

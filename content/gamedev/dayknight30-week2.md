@@ -91,3 +91,5 @@ Just like [last week](../dayknight30_week1) here is a changelog generated from m
 - [GUI is now the default version(--terminal for shell only)](https://github.com/olehermanse/mrpg/commit/79a1196c22ea3969a9f72786843d633a4aff334e)
 
 [Generated using `git log`](/dev/markdown_git_changelogs).
+
+_This post was written entirely by a human without the use of AI / LLMs._

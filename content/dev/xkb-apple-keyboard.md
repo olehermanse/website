@@ -218,3 +218,5 @@ Add the commands to your `~/.bashrc` to make them permanent.
 
 May be overwritten by updates.
 Make sure you save backups, patches or scripts to reapply your changes.
+
+_This post was written entirely by a human without the use of AI / LLMs._

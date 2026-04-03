@@ -25,3 +25,5 @@ You can also use a tag:
 ```bash
 $ git log --pretty=format:"* [%s](https://github.com/olehermanse/mrpg/commit/%H)" v.1.4..HEAD
 ```
+
+_This post was written entirely by a human without the use of AI / LLMs._

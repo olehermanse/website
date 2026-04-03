@@ -106,3 +106,5 @@ The same flags worked for unit tests:
 $ cd tests/unit
 $ make CFLAGS="-fsanitize=address" LDFLAGS="-fsanitize=address -pthread" check
 ```
+
+_This post was written entirely by a human without the use of AI / LLMs._

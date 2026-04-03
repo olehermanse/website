@@ -84,3 +84,5 @@ Most important features to focus on are progression (unlocking and equipping ski
 - [Mana and stats are now correctly reset after adventure](https://github.com/olehermanse/mrpg/commit/febb9d88bd6c2fdf462e34951ff61ec39b9340ec)
 - [Blood pact now kills if already bleeding](https://github.com/olehermanse/mrpg/commit/0d055530473eb02a81d9e0e0a2cc4bb6fe8c8612)
 - [Added mana costs](https://github.com/olehermanse/mrpg/commit/574a5560864b3fecb5f2514d104442f27319246f)
+
+_This post was written entirely by a human without the use of AI / LLMs._

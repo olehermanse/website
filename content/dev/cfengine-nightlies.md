@@ -74,3 +74,5 @@ If they are already downloaded, they will be reused.
 That's it, the host has been bootstrapped, and Mission Portal is running.
 You can open Mission Portal in your browser and start exploring.
 (In my case above, it would be `https://54.217.161.96`).
+
+_This post was written entirely by a human without the use of AI / LLMs._
