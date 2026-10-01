@@ -1,7 +1,7 @@
 FROM docker.io/alpine AS build
 RUN apk update && apk upgrade && apk add --no-cache bash git openssh
-ADD https://github.com/gohugoio/hugo/releases/download/v0.159.2/hugo_0.159.2_linux-amd64.tar.gz /hugo/hugo.tar.gz
-RUN echo "0495595d6939425add8fd992f2c20bfa6bfe1181895d821b09f9a06995b60ca8  /hugo/hugo.tar.gz" | sha256sum -c
+ADD https://github.com/gohugoio/hugo/releases/download/v0.167.0/hugo_0.167.0_linux-amd64.tar.gz /hugo/hugo.tar.gz
+RUN echo "4d84519b9f619e6d4c3fb45a50157abeabeb724f859c60605f44c23def6e1169  /hugo/hugo.tar.gz" | sha256sum -c
 WORKDIR /hugo
 RUN tar -zxvf hugo.tar.gz
 WORKDIR /website
